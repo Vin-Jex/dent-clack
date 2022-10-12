@@ -1,6 +1,11 @@
 <!-- @format -->
-Hacktoberfest 2022
-# Dent Clack
+<center> HACKTOBERFEST 2022</center>
+
+# <center> Dent Clack </center>
+
+
+##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)*
+
 
 ![Project Image](project-image-url)
 
@@ -77,6 +82,8 @@ git push <remote-name e.g origin> <branch-name>
 
 # Contribution Rules📚:
 
+- Do read the `CONTRIBUTING.md` file
+- Do NOT remove other content ⚠️.
 - You are allowed to make pull requests that break the rules. We just merge it :)
 - Do NOT add any build steps for now e.g npm install (we want to keep this a simple static site)
 - Do NOT remove other content.
