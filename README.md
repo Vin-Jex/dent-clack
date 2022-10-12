@@ -154,7 +154,7 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 
 - Twitter - [@Vincent](https://twitter.com/vincent_coder)
 - LinkedIn - [@Pythonichub](https://linkedin.com/in/pythonichub)
-- GitHub - [@Pythoniclaver](https://github.com/in/pythoniclaver)
+- GitHub - [@Pythoniclaver](https://github.com/pythoniclaver)
 - Website - [Pythonichub](https://pythonichub.vercel.app)
 
 [Back To The Top](#dent-clack)
