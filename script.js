@@ -1,6 +1,6 @@
 const toggle = document.querySelector(".toggle");
 const nav = document.querySelector(".nav-main");
-let lists = document.querySelectorAll(".btn");
+let lists = document.querySelectorAll(".navlinks");
 
 // const linkContainer = document.querySelector(".links")
 
