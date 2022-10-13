@@ -20,6 +20,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/**********************HEADER SECTION ***********************/
+
 #header {
   background-color: #fff;
   position: static;
@@ -52,8 +54,13 @@ html {
   font-size: clamp(1.9rem, 1vw + 1rem, 2.2rem);
   font-weight: 500;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
+.logo > a {
+  text-decoration: none;
+  color: #000;
+}
 .nav-left ul {
   list-style: none;
   display: flex;
@@ -105,17 +112,43 @@ html {
   display: inline-flex;
   align-items: center;
 }
-
-.nav-right button {
+.btn {
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
   cursor: pointer;
-  background: #000;
-  color: #fff;
-  border: 0.1px solid var(--secondary);
   border-radius: 0.2rem;
   margin-right: 0.4rem;
   transition: var(--transition);
+}
+
+.btn--outline {
+  background: var(--outline);
+  color: var(--primary);
+  border: 2px solid transparent;
+}
+
+.btn--outline:hover {
+  background: var(--primary);
+  color: var(--outline);
+  border: 2px solid var(--outline);
+}
+
+.btn--primary:hover {
+  background: var(--outline);
+  color: var(--primary);
+  border: 2px solid var(--outline);
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: var(--outline);
+  border: 2px solid var(--outline);
+}
+
+.nav-right button {
+  background: #000;
+  color: #fff;
+  border: 0.1px solid var(--secondary);
 }
 
 .nav-right button:hover {
@@ -202,6 +235,64 @@ html {
   transform: translateY(0px) rotate(-45deg);
 }
 
+/**********************HOME SECTION ***********************/
+#home {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  padding: 3rem;
+}
+
+.home-left {
+  display: block;
+  text-justify: inter-ideograph;
+}
+
+.home-left h1 {
+  font-size: 3rem;
+  width: 80%;
+  text-transform: capitalize;
+  padding: 0 0 0.5rem 0;
+  font-family: "Fjalla One", sans-serif;
+  word-spacing: 0.4rem;
+}
+
+.home-left p {
+  font-size: 1rem;
+  width: 75%;
+  line-height: 1.3rem;
+  word-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.home-left form {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  line-height: 2rem;
+  align-items: center;
+}
+.home-left button:last-child {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
+.home-left button span {
+  width: fit-content;
+  line-height: 1rem;
+  align-items: center;
+}
+
+.home-right img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--outline);
+  border-radius: 0.3rem 0.3rem 7rem 7rem;
+}
+
 @media screen and (max-width: 962px) {
   .toggle {
     display: flex;
@@ -275,9 +366,6 @@ html {
 }
 
 @media screen and (max-width: 758px) {
-  body {
-    background: green;
-  }
   .nav-left .logo {
     padding-right: 3rem;
   }
@@ -292,5 +380,26 @@ html {
 
   .nav-left ul li a {
     padding: 1rem;
+  }
+
+  /**********************HOME SECTION ***********************/
+  #home {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-left {
+    margin-bottom: 2rem;
+  }
+
+  .home-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-left p {
+    font-size: 1rem;
+    width: 100%;
   }
 }
