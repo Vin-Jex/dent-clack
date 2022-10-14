@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+section {
+  position: relative;
+}
+
 html {
   background: var(--primary);
   color: inherit;
@@ -16,6 +20,8 @@ html {
   --blue: #3763ff;
   /* #0a0837 */
 
+  --font: "Fjalla One", sans-serif;
+
   --transition: all 0.2s ease;
   scroll-behavior: smooth;
 }
@@ -24,12 +30,11 @@ html {
 
 #header {
   background-color: #fff;
-  position: static;
-  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0.5rem 1rem 0.5rem 3rem;
+  overflow: hidden;
   /* padding: clamp(1rem, 1vw + 1rem, 1rem) clamp(1rem, 1vw + 1rem, 3.2rem); */
 }
 
@@ -40,7 +45,6 @@ html {
   align-items: center;
   /* padding: clamp(1rem, 1vw + 1rem, 1rem) clamp(1rem, 1vw + 1rem, 3.2rem); */
   width: 100vw;
-  overflow: hidden;
 }
 
 .nav-left {
@@ -50,7 +54,7 @@ html {
 
 .nav-left .logo {
   padding-right: 5rem;
-  font-family: "Fjalla One", sans-serif;
+  font-family: var(--font);
   font-size: clamp(1.9rem, 1vw + 1rem, 2.2rem);
   font-weight: 500;
   text-transform: capitalize;
@@ -108,10 +112,19 @@ html {
 .nav-left ul li.active {
   position: relative;
 }
+
 .nav-right {
   display: inline-flex;
   align-items: center;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 22;
+}
+
 .btn {
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
@@ -177,7 +190,7 @@ html {
   display: none;
 }
 
-.nav-right form #search {
+/* .nav-right form #search {
   padding: 0.7rem 2rem 0.7rem 0.7rem;
   font-size: 1rem;
   border-radius: 0.4rem;
@@ -188,7 +201,7 @@ html {
 .nav-right form #search:focus {
   color: var(--secondary);
   outline: var(--secondary);
-}
+} */
 
 .text-green {
   color: var(--outline);
@@ -237,12 +250,15 @@ html {
 
 /**********************HOME SECTION ***********************/
 #home {
-  position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
   padding: 3rem;
+}
+
+.sticky + #home {
+  padding-top: 60px;
 }
 
 .home-left {
@@ -274,7 +290,7 @@ html {
   line-height: 2rem;
   align-items: center;
 }
-.home-left button:last-child {
+.home-left button {
   display: flex;
   width: fit-content;
   align-items: center;
@@ -282,8 +298,10 @@ html {
 
 .home-left button span {
   width: fit-content;
+  font-size: 1.5rem;
   line-height: 1rem;
   align-items: center;
+  padding-bottom: 0.1rem;
 }
 
 .home-right img {
@@ -293,6 +311,162 @@ html {
   border-radius: 0.3rem 0.3rem 7rem 7rem;
 }
 
+/*************** About Section **********************/
+#about {
+  position: relative;
+  background: #fff;
+  color: #000;
+  margin: 3rem auto;
+  padding: 2rem 0;
+}
+
+.header-title {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.header-title h4 {
+  color: var(--outline);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.header-title h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.header-title h5 {
+  color: var(--secondary);
+  width: 20rem;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  place-content: center;
+  padding: 3rem;
+}
+
+.about-card {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  margin: 3rem auto;
+  width: 100%;
+  border-radius: 4rem 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+}
+
+.about-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font);
+  padding-bottom: 0.3rem;
+}
+
+header h4 {
+  color: var(--outline);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--font);
+  line-height: 1.5rem;
+}
+
+.about-card h4 {
+  color: var(--outline);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font);
+  padding-bottom: 0.3rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  place-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  background: var(--primary);
+  padding: 3rem;
+}
+
+.about-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0.3rem;
+}
+
+.column img {
+  width: 20rem;
+  vertical-align: middle;
+  margin-top: 0.6rem;
+  height: 15rem;
+  padding: 0 1.2rem;
+  object-fit: cover;
+}
+
+.column img:nth-child(odd) {
+  border-radius: 1rem 4rem;
+}
+.column img:nth-child(even) {
+  border-radius: 4rem 1rem;
+}
+
+.about-main h4 {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+  color: var(--outline);
+}
+
+.about-main h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+}
+
+.about-main p {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: var(--font);
+  padding-bottom: 2rem;
+}
+.about-main h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+}
+
+/* REsponsive Design on tablet screen size */
 @media screen and (max-width: 962px) {
   .toggle {
     display: flex;
@@ -312,7 +486,6 @@ html {
     align-items: center;
     /* padding: clamp(1rem, 1vw + 1rem, 1rem) clamp(1rem, 1vw + 1rem, 3.2rem); */
     width: 100%;
-    overflow: hidden;
     margin: 0 auto;
   }
 
@@ -335,15 +508,6 @@ html {
     align-items: center;
   }
 
-  /* .nav-left ul {
-  display: none;
-} */
-
-  /* .nav-right form,
-  .nav-right button {
-    display: none;
-  } */
-
   .nav-left ul li {
     font-size: 1.1rem;
     line-height: 2.7rem;
@@ -365,6 +529,7 @@ html {
   }
 }
 
+/* Responsive design on mobile devices */
 @media screen and (max-width: 758px) {
   .nav-left .logo {
     padding-right: 3rem;
@@ -384,10 +549,11 @@ html {
 
   /**********************HOME SECTION ***********************/
   #home {
-    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    margin: 2.5rem auto 5rem auto;
   }
 
   .home-left {
@@ -396,10 +562,16 @@ html {
 
   .home-left h1 {
     font-size: 2.2rem;
+    width: 100%;
   }
 
   .home-left p {
     font-size: 1rem;
     width: 100%;
+  }
+
+  .home-right img {
+    width: 100%;
+    height: 110%;
   }
 }
