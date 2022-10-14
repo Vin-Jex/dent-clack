@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const screenWidth = window.innerWidth;
   const appointment = document.querySelector("#appointment");
   const play = document.querySelector("#play");
-  if (screenWidth <= 500) {
+  if (screenWidth <= 784) {
     appointment.innerHTML = "Book";
     let icon = document.createElement("span");
     icon.classList.add("material-symbols-outlined");
