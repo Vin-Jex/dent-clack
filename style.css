@@ -254,6 +254,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
   padding: 3rem;
+  margin-top: 4rem;
 }
 
 .sticky + #home {
