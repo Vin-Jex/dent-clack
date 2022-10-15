@@ -609,6 +609,7 @@ header h4 {
   /*********************** servicesS ***********************/
   #services {
     grid-template-columns: 1fr;
+    padding: 3rem 1rem;
   }
 
   .services-left,
@@ -695,6 +696,17 @@ header h4 {
   .about-card {
     margin: 0 auto;
   }
+
+  .about-main h2 {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+}
+
+.services-left h2 {
+  font-size: 1.4rem;
+}
 
   .services-left ul li {
     padding-bottom: 1.2rem;
