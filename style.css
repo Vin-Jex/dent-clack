@@ -466,6 +466,71 @@ header h4 {
   font-family: var(--font);
 }
 
+/*********************** servicesS ***********************/
+#services {
+  position: relative;
+  padding: 4rem 3rem;
+  margin-top: 3rem;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+
+.services-left,
+.services-right {
+  width: 100%;
+}
+
+.services-left h4 {
+  line-height: 1.5rem;
+  color: var(--outline);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.services-left h2 {
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.services-left ul {
+  display: block;
+  padding: 1.5rem;
+}
+
+.services-left ul li {
+  list-style: none;
+  position: relative;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.services-left ul li::before {
+  position: absolute;
+  content: " ";
+  top: 0.5rem;
+  left: -1.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  border: 3px solid var(--outline);
+  font-size: 2rem;
+}
+
+.services-right img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6rem 1rem;
+  border: 2px solid var(--outline);
+}
+
 /* REsponsive Design on tablet screen size */
 @media screen and (max-width: 962px) {
   .toggle {
@@ -538,9 +603,39 @@ header h4 {
 
   .about-us {
     grid-template-columns: 1fr;
-      padding: 1rem;
+    padding: 1rem;
   }
 
+  /*********************** servicesS ***********************/
+  #services {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+  }
+
+  .services-left h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .services-left h2 {
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .services-left ul {
+    padding: 1.6rem;
+  }
+
+  .services-left ul li {
+    padding-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
 }
 
 /* Responsive design on mobile devices */
@@ -591,6 +686,7 @@ header h4 {
 
   .header-title h2 {
     font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .about-cards {
@@ -599,5 +695,21 @@ header h4 {
 
   .about-card {
     margin: 0 auto;
+  }
+
+  .about-main h2 {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+}
+
+.services-left h2 {
+  font-size: 1.4rem;
+}
+
+  .services-left ul li {
+    padding-bottom: 1.2rem;
+    font-size: 1.3rem;
   }
 }
