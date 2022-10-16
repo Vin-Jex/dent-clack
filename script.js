@@ -47,16 +47,86 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 /* Static Nav bar */
-const header = document.querySelector('#header');
-const sticky = header.offsetTop;;
-
+const header = document.querySelector("#header");
+const sticky = header.offsetTop;
 
 window.onscroll = () => {
   if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky")
+    header.classList.add("sticky");
   } else {
-    header.classList.remove("sticky")
+    header.classList.remove("sticky");
   }
-}
+};
+
+/* Swiper js function */
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 500,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+
+    1024: {
+      slidesPerView: 3,
+    }
+
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+});
+
+
+
+/* Swiper js function */
+const swiper2 = new Swiper(".swiper2", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 60,
+  grabCursor: true,
+  speed: 500,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+});
