@@ -7,8 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dent Clack</title>
-
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiperjs.css" />
+    <!-- SWIPERJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Google Icons CDN -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -34,8 +40,9 @@
           <ul>
             <li><a href="#" class="navlinks">Home</a></li>
             <li><a href="#about" class="navlinks">About</a></li>
-            <li><a href="#services" class="navlinks">Service</a></li>
-            <li><a href="#features" class="navlinks">Features</a></li>
+            <li><a href="#services" class="navlinks">Services</a></li>
+            <li><a href="#professionals" class="navlinks">Professionals</a></li>
+            <li><a href="#testimonials" class="navlinks">Testimonials</a></li>
           </ul>
         </div>
         <div class="nav-right">
@@ -169,7 +176,89 @@
         <img src="./images/Dentist2.jpg" alt="Dentist" />
       </div>
     </section>
+    <!--------------------- Professionals ------------------->
+    <section class="professionals" id="professionals">
+      <header>
+        <h4>Our Professionals</h4>
+        <h2>Meet our doctors</h2>
+      </header>
 
+      <main class="swiper">
+        <div class="swiper-wrapper professionals-swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="./images/Dentist.jpg"
+              alt="Our Specialist"
+              class="swiper-slide"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./images/Dentist2.jpg"
+              alt="Our Specialist"
+              class="swiper-slide"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./images/Dentist3.jpg"
+              alt="Our Specialist"
+              class="swiper-slide"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </main>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <header>
+        <h4>Testimonials</h4>
+        <h2>What they say</h2>
+      </header>
+
+      <main class="swiper2">
+        <div class="swiper-wrapper">
+          
+          <div class="testimonials-content swiper-slide">
+            <div class="client-detail">
+               <img src="./images/Dentist.jpg" alt="client-img" />
+               <h2 class="client-name">Jane Doe</h2>
+            </div>
+           
+
+            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              nesciunt error! Unde ullam cumque nemo aspernatur, enim tempora
+              modi itaque ipsam maxime earum alias natus veritatis obcaecati
+              consectetur nulla porro excepturi corporis facilis. Doloremque
+              adipisci ipsum quam quos accusantium dignissimos? Est tempore
+              impedit eius necessitatibus assumenda. Cum illo culpa veritatis.
+              Incidunt accusamus quaerat repellendus ex officiis eaque delectus
+              doloremque amet.
+            </p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination2"></div>
+      </main>
+    </section>
+
+    <!-- SWIPERJS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script file -->
     <script src="script.js"></script>
   </body>
