@@ -600,21 +600,32 @@ header h4 {
   background: var(--primary);
   width: 30rem;
   padding: 3rem;
-  margin: auto;
+  margin: 2rem auto;
   background-color: var(--primary);
   overflow: hidden;
 }
 
 .client-name {
   text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: var(--outline);
+  font-family: var(--font);
 }
 
 .testimonials-content {
   position: relative;
-  background: #fff;
+  background: var(--primary);
   padding: 2rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.testimonials-content p {
+  font-size: .9rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
 }
 
 .testimonials header {
@@ -821,4 +832,10 @@ header h4 {
     padding-bottom: 1.2rem;
     font-size: 1.3rem;
   }
+
+  #professionals, #testimonials  {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
 }

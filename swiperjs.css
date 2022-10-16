@@ -11,6 +11,19 @@
   position: relative;
 }
 
+.swiper-slide {
+    padding-bottom: 2.5rem;
+}
+
+.swiper-pagination2 {
+	position: absolute;
+	bottom: 0;
+	right: auto;
+	width: auto !important;
+	left: 45% !important;
+  z-index: 99;
+}
+
 .professionals-swiper-wrapper .swiper-slide {
   display: flex;
   display: -webkit-box;
@@ -25,7 +38,6 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding-bottom: 1.5rem;
 }
 
 .swiper-pagination-bullet-active,
@@ -48,4 +60,26 @@
   left: 10rem;
   width: 4rem;
   height: 4rem;
+}
+
+
+/* Responsive design on mobile devices */
+@media screen and (max-width: 758px) {
+.swiper2 .swiper-wrapper img {
+  border-radius: 50%;
+  position: absolute;
+  top: -2rem;
+  left: 42%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.swiper-pagination2 {
+	position: absolute;
+	bottom: 0;
+	right: auto;
+	width: auto !important;
+	left: 42% !important;
+  z-index: 99;
+}
 }
