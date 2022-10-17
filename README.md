@@ -43,7 +43,7 @@ The below links would help you navigate to different sections of the README.
 ## Getting Started
 1. **Fork a repo**: Just click on the "[Fork](https://github.com/pythoniclaver/Dent-Clack/fork)" to fork the project or click on the second icon at the top right to fork
 
-2. **Clone the folked project**
+2. **Clone the forked project**
 
 ```bash
 git clone https://github.com/<your-github-username>/Dent-Clack
@@ -85,7 +85,7 @@ cd Dent-Clack
   git add <file-name>
   git commit -m <commit-message>
   ```
-- Push to your folked repository
+- Push to your forked repository
 ```bash
 git push <remote-name e.g origin> <branch-name>
 ```
@@ -149,7 +149,7 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 
 # FAQs (Frequently Asked Questions)
 
-- Who all can contribute?
+- Who can contribute?
   - Anyone with a github account and who is signed up for
     [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
