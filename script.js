@@ -78,8 +78,7 @@ const swiper = new Swiper(".swiper", {
 
     1024: {
       slidesPerView: 3,
-    }
-
+    },
   },
 
   // If we need pagination
@@ -100,15 +99,12 @@ const swiper = new Swiper(".swiper", {
   // },
 });
 
-
-
 /* Swiper js function */
-const swiper2 = new Swiper(".swiper2", {
+const swiper2 = new Swiper(".testimonials", {
   // Optional parameters
   direction: "horizontal",
-  loop: true,
   slidesPerView: 1,
-  spaceBetween: 60,
+  spaceBetween: 30,
   grabCursor: true,
   speed: 500,
   keyboard: {
@@ -117,6 +113,11 @@ const swiper2 = new Swiper(".swiper2", {
   pagination: {
     el: ".swiper-pagination2",
     clickable: true,
+  },
+  breakpoints: {
+    640: {
+      spaceBetween: 40,
+    },
   },
 
   // Navigation arrows

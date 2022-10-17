@@ -11,7 +11,6 @@ section {
 }
 
 html {
-  background: var(--primary);
   color: inherit;
   font-family: "Oswald", sans-serif;
   --primary: #f5f5f5;
@@ -285,6 +284,7 @@ html {
   place-content: center;
   padding: 3rem;
   margin-top: 4rem;
+  background: var(--primary);
 }
 
 .sticky + #home {
@@ -583,26 +583,50 @@ header h4 {
 }
 
 /********************** professionals *******************/
-#professionals {
+#specialist {
+  background: var(--primary);
+  width: 98vw;
+}
+.specialist {
   background: var(--primary);
   width: 80%;
   padding: 3rem;
   margin: auto;
 }
 
-.professionals header {
+.specialist header {
   margin: 1rem auto;
   text-align: center;
+}
+
+.docs-name {
+  position: absolute;
+  background-color: rgba(225, 225, 225, 1);
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border-radius: 0 0 4.7rem 0;
+  bottom: 9.7%;
+}
+
+.docs-name h4 {
+  font-size: 1.2rem;
+  font-family: var(--font);
+  color: var(--secondary);
+  line-height: 1.8rem;
+}
+.docs-name h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
 }
 
 /********************** professionals *******************/
 #testimonials {
   background: var(--primary);
-  width: 30rem;
+  width: 50%;
   padding: 3rem;
-  margin: 2rem auto;
-  background-color: var(--primary);
-  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .client-name {
@@ -613,24 +637,123 @@ header h4 {
   font-family: var(--font);
 }
 
+.client-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .testimonials-content {
   position: relative;
-  background: var(--primary);
+  background: #fff;
   padding: 2rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
-  margin-top: 4rem;
+  margin: 4rem auto 2.5rem auto;
 }
 
 .testimonials-content p {
-  font-size: .9rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
-.testimonials header {
+#testimonials header {
   margin: 1rem auto;
   text-align: center;
+}
+
+#footer {
+  display: block;
+  background: var(--primary);
+  padding: 3rem 3rem 0rem 3rem;
+}
+
+.footer-top {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  word-spacing: 0.3rem;
+  color: var(--outline);
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer-bottom {
+  width: 100%;
+}
+
+.footer-bottom nav {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom nav ul {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.footer-bottom nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0.5rem 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-bottom nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-bottom nav ul li:hover {
+  font-size: 1.4;
+  transform: translateY(-0.3rem);
+}
+
+.footer-bottom nav ul li a:hover {
+  opacity: 0.8;
+  font-size: 1.4;
+}
+
+.footer-bottom nav ul li a i {
+  background: #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--outline);
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer-bottom nav ul li a i:hover {
+  background: #000;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--outline);
+  border-radius: 1rem;
+}
+
+.footer-bottom .copyright {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 1rem;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer-bottom .copyright a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
 }
 
 /* Responsive Design on tablet screen size */
@@ -833,9 +956,38 @@ header h4 {
     font-size: 1.3rem;
   }
 
-  #professionals, #testimonials  {
+  .specialist,
+  #testimonials,
+  #specialist {
     width: 100%;
     padding: 3rem 2rem;
   }
 
+  #footer {
+    padding: 3rem 1rem 0rem 3rem;
+  }
+
+  .footer-top {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 0.1rem;
+  }
+
+  .footer-bottom nav:first-child ul li {
+    display: block;
+    line-height: 2.6rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom nav ul li a i {
+    font-size: 1.5rem;
+  }
+
+  .footer-bottom nav ul li a i:hover {
+    font-size: 1.55rem;
+  }
+
+  .footer-bottom .copyright {
+    font-size: 0.9rem;
+  }
 }

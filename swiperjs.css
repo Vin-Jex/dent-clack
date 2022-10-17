@@ -5,23 +5,14 @@
   height: 100%;
 }
 
-.swiper2 {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.swiper.testimonials {
+  width: 30rem !important;
+  padding: 0 4rem;
 }
 
-.swiper-slide {
-    padding-bottom: 2.5rem;
-}
-
-.swiper-pagination2 {
-	position: absolute;
-	bottom: 0;
-	right: auto;
-	width: auto !important;
-	left: 45% !important;
-  z-index: 99;
+.testimonials-content.swiper-slide {
+  padding-bottom: 2.5rem;
+  width: 28rem;
 }
 
 .professionals-swiper-wrapper .swiper-slide {
@@ -38,6 +29,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  padding-bottom: 1.5rem;
 }
 
 .swiper-pagination-bullet-active,
@@ -53,33 +45,21 @@
   object-fit: cover;
 }
 
-.swiper2 .swiper-wrapper img {
+.testimonials .swiper-wrapper img {
   border-radius: 50%;
-  position: absolute;
-  top: -2rem;
-  left: 10rem;
   width: 4rem;
   height: 4rem;
+  margin-top: -4rem;
+  object-fit: cover;
 }
-
 
 /* Responsive design on mobile devices */
 @media screen and (max-width: 758px) {
-.swiper2 .swiper-wrapper img {
-  border-radius: 50%;
-  position: absolute;
-  top: -2rem;
-  left: 42%;
-  width: 4rem;
-  height: 4rem;
-}
+  .testimonials .swiper-wrapper img {
+  }
 
-.swiper-pagination2 {
-	position: absolute;
-	bottom: 0;
-	right: auto;
-	width: auto !important;
-	left: 42% !important;
-  z-index: 99;
-}
+  .swiper.testimonials {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
 }
