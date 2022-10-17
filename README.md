@@ -4,12 +4,12 @@
 # <center> Dent Clack </center>
 
 
-##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)*
+<!-- ##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)* -->
 
 
-![Project Image](project-image-url)
+![Project Image](./images/DentClack.png)
 
-> Dent Clack is a medical application that helps people get access to quick appointment for dental treatment at the comfort of their home.
+> Dent Clack is a medical web application that helps people get access to quick appointment for dental treatment at the comfort of their home.
 
 ---
 
@@ -28,7 +28,7 @@ The below links would help you navigate to different sections of the README.
 
 ## Description
 
-**Dent Clack is a medical application that helps people get access to quick appointment for dental treatment at the comfort of their home. This is a simple project built under the idea of helping non tech and beginners in coding participate in open source. Happy Learning 💙 :) !**
+**Dent Clack is a medical web application that helps people get access to quick appointment for dental treatment at the comfort of their home. This is a simple project built under the idea of helping beginners to participate in open source. Happy Coding 💙 :) !**
 
 #### Technologies
 
@@ -56,6 +56,22 @@ cd Dent-Clack
 ```
 
 4. **Run the project on your browser**
+     For VSCode
+
+    ```bash
+      code .
+    ```
+     Other Text Editor on Mac
+
+    ```bash
+      open ~
+    ```
+    On Windows
+    ```bash
+    start .
+    ```
+      > Then run ```index.html``` on your browser
+  
 
 ## Made any changes?
 
@@ -82,12 +98,11 @@ git push <remote-name e.g origin> <branch-name>
 
 # Contribution Rules📚:
 
-- Do read the `CONTRIBUTING.md` file
-- Do NOT remove other content ⚠️.
+- Read the [CONTRIBUTING.md](/CONTRIBUTING.md) file
+- ⚠️ Do NOT remove other content If not necessary ⚠️
 - You are allowed to make pull requests that break the rules. We just merge it :)
 - Do NOT add any build steps for now e.g npm install (we want to keep this a simple static site)
-- Do NOT remove other content.
-- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+- Code styling can be pretty, ugly or stupid, big or small as long as it works
 <!-- - Add your name to the contributorsList file. -->
 - Try to keep pull requests small to minimize merge conflicts
 
@@ -125,7 +140,7 @@ For more information on syncing forks [read this article from Github](https://he
 
 ## License
 
-Dent-Clack is licensed under the MIT License - Checkout [LICENSE](LICENSE) for details.
+Dent-Clack is licensed under the MIT License - Checkout [LICENSE](/LICENSE) for details.
 
 
 P.S. Star ⭐ and Share this repository, if you had fun!!! 😊 
