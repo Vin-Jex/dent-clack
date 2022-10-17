@@ -120,6 +120,7 @@ html {
   color: var(--outline);
 }
 
+
 .nav-left ul li a.active::before {
   position: absolute;
   bottom: 0.5rem;
@@ -757,6 +758,9 @@ header h4 {
 }
 
 /* Responsive Design on tablet screen size */
+.nav-right{
+  width: 12px;
+}
 @media screen and (max-width: 962px) {
   .toggle {
     display: flex;
@@ -819,6 +823,8 @@ header h4 {
   .nav-left ul li {
     font-size: 1.1rem;
     line-height: 2.7rem;
+    width: 140px;
+    background: #F5f5f5;
   }
 
   .nav-left ul li a {

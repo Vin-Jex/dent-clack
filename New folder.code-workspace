@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "New folder",
+			"path": "D:/New folder"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.cpp": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}
