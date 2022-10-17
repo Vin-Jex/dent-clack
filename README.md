@@ -1,7 +1,7 @@
 <!-- @format -->
 <center> HACKTOBERFEST 2022</center>
 
-# <center> Dent Clack </center>
+# <a name="home"><center> Dent Clack </center></a>
 
 
 <!-- ##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)* -->
@@ -9,13 +9,11 @@
 
 ![Project Image](./images/DentClack.png)
 
-> Dent Clack is a medical web application that helps people get access to quick appointment for dental treatment at the comfort of their home.
+> Dent Clack is a medical web application that makes booking dental appointments easier and quicker from the comfort of your home.
 
 ---
 
 ### Table of Contents
-
-The below links would help you navigate to different sections of the README.
 
 - [Description](#description)
 - [How To Get Started](#getting-started)
@@ -28,7 +26,7 @@ The below links would help you navigate to different sections of the README.
 
 ## Description
 
-**Dent Clack is a medical web application that helps people get access to quick appointment for dental treatment at the comfort of their home. This is a simple project built under the idea of helping beginners to participate in open source. Happy Coding 💙 :) !**
+**Dent Clack is a medical web application that aims to help make booking dental appointments quick and easy from the comfort of your home. This is a simple project built under the idea of helping beginners get more familiar with open source. Happy Coding 💙 :) !**
 
 #### Technologies
 
@@ -36,24 +34,24 @@ The below links would help you navigate to different sections of the README.
 - CSS
 - JavaScript
 
-[Back To The Top](#dent-clack)
+[Back To The Top](#home)
 
 ---
 
 ## Getting Started
-1. **Fork a repo**: Just click on the "[Fork](https://github.com/pythoniclaver/Dent-Clack/fork)" to fork the project or click on the second icon at the top right to fork
+1. **Fork the repo**: Just click on the "[Fork](https://github.com/pythoniclaver/Dent-Clack/fork)" to fork the project or click on the second icon at the top right to fork
 
 2. **Clone the forked project**
 
-```bash
-git clone https://github.com/<your-github-username>/Dent-Clack
-```
+     ```bash
+     git clone https://github.com/<your-github-username>/Dent-Clack
+     ```
 
 3. **Navigate to the project directory**
 
-```bash
-cd Dent-Clack
-```
+     ```bash
+     cd Dent-Clack
+     ```
 
 4. **Run the project on your browser**
      For VSCode
@@ -86,26 +84,23 @@ cd Dent-Clack
   git commit -m <commit-message>
   ```
 - Push to your forked repository
-```bash
-git push <remote-name e.g origin> <branch-name>
-```
+     ```bash
+     git push <remote-name e.g origin> <branch-name>
+     ```
 
 5. **Create a new pull request from your forked repository**
-<br><br><br>
-
-
-
+<br><br>
 
 # Contribution Rules📚:
 
-- Read the [CONTRIBUTING.md](/CONTRIBUTING.md) file
+- Make a branch for every contribution you wish to make
+- Open a pull request after you are done but note DO NOT MERGE it will only be done after the collaboratos have carefully reviewed your work
 - ⚠️ Do NOT remove other content If not necessary ⚠️
-- You are allowed to make pull requests that break the rules. We just merge it :)
-- Do NOT add any build steps for now e.g npm install (we want to keep this a simple static site)
-- Code styling can be pretty, ugly or stupid, big or small as long as it works
-<!-- - Add your name to the contributorsList file. -->
-- Try to keep pull requests small to minimize merge conflicts
-
+- If you have any special edits please contact a collaborator
+- Code styling wont be heavily enforced but please write readable code
+- Don't forget to add your name to the contributors list file
+- Make your pull requests in an incremental manner so as to avoid merging bad code
+- Read the [CONTRIBUTING.md](/CONTRIBUTING.md) file for detailed information
 <br>
 
 ## Avoid Conflicts {Syncing your fork}
@@ -133,7 +128,7 @@ This will give you any eventual conflicts and allow you to easily solve them in 
 For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
 
 
-[Back To The Top](#dent-clack)
+[Back To The Top](#home)
 
 ---
 
@@ -152,8 +147,6 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 - Who can contribute?
   - Anyone with a github account and who is signed up for
     [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
-- Are you getting paid for this?
-  - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
   - I are a programmer from Nigeria [Vincent](https://www.linkedin.com/in/pythoniclaver/).
    I'm doing this because I love Open Source and Hacktoberfest. I want to make it easier for people to get started with Hacktoberfest and Open Source.
@@ -179,7 +172,7 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 - GitHub - [@Pythoniclaver](https://github.com/pythoniclaver)
 - Website - [Pythonichub](https://pythonichub.vercel.app)
 
-[Back To The Top](#dent-clack)
+[Back To The Top](#home)
 
 ---
 
