@@ -53,6 +53,11 @@
   object-fit: cover;
 }
 
+#Jeff-Denlea
+{
+  object-position: top left;
+}
+
 /* Responsive design on mobile devices */
 @media screen and (max-width: 758px) {
   .testimonials .swiper-wrapper img {
