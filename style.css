@@ -896,6 +896,15 @@ header h4 {
 
 /* Responsive design on mobile devices */
 @media screen and (max-width: 758px) {
+  header{
+    min-height:50px;
+  }
+  .logo{
+    position: absolute;
+  }
+  .nav-main {
+    margin-top: 20px;
+  }
   .nav-left .logo {
     padding-right: 3rem;
   }
