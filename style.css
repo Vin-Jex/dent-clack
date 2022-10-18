@@ -191,6 +191,10 @@ html {
   text-decoration: none;
   color: #000;
 }
+.btn-link:focus{
+  text-decoration: none;
+  color: #000;
+}
 
 .nav-right button {
   background: #000;
