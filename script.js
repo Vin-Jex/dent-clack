@@ -24,6 +24,10 @@ toggle.addEventListener("click", () => {
 
 lists.forEach((btn) => {
   btn.addEventListener("click", (element) => {
+     // close navigation bar on mobile on link click 
+     toggle.classList.toggle("show-nav");
+     nav.classList.toggle("show-nav");
+     
     lists.forEach((link) => link.classList.remove("active"));
     element.target.classList.add("active");
   });
