@@ -183,6 +183,19 @@ html {
   border: 2px solid var(--outline);
 }
 
+.btn-link{
+  text-decoration: none;
+  color: #fff;
+}
+.btn-link:hover{
+  text-decoration: none;
+  color: #000;
+}
+.btn-link:focus{
+  text-decoration: none;
+  color: #000;
+}
+
 .nav-right button {
   background: #000;
   color: #fff;
