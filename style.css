@@ -636,10 +636,16 @@ header h4 {
 /********************** professionals *******************/
 #testimonials {
   background: var(--primary);
-  width: 50%;
+  width: 100%;
   padding: 3rem;
   margin: 0 auto;
   background-color: #fff;
+  border-top: #e1e1e1 20px solid;
+  border-bottom: #e1e1e1 20px solid;
+}
+.swiper.testimonials {
+  width: 30rem !important;
+  padding: 0 2rem;
 }
 
 .client-name {
