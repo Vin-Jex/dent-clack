@@ -367,6 +367,8 @@ html {
   height: 100%;
   border: 1px solid var(--outline);
   border-radius: 0.3rem 0.3rem 7rem 7rem;
+  object-fit: cover;
+  object-position: 35% 0%;
 }
 
 /*************** About Section **********************/
