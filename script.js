@@ -131,3 +131,9 @@ const swiper2 = new Swiper(".testimonials", {
   //   el: ".swiper-scrollbar",
   // },
 });
+ const chk = document.getElementById('chk');
+
+ chk.addEventListener('change', () => {
+  var element = document.body;
+  element.classList.toggle("dark");
+ });

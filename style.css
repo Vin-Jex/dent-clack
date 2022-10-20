@@ -17,6 +17,11 @@ html {
   --outline: #07c589;
   --secondary: #696969;
   --blue: #3763ff;
+  --custom:#fff;
+  --bcolor:#000;
+  --box-shadow:0px 5px 15px rgba(0,0,0,.4);
+  --ccolor:rgba(225, 225, 225, 1);
+  --cacolor:#effff0;
   /* #0a0837 */
 
   --font: "Fjalla One", sans-serif;
@@ -24,11 +29,24 @@ html {
   --transition: all 0.2s ease;
   scroll-behavior: smooth;
 }
+.dark {
+  background-color:rgb(32, 32, 32);
+  --primary: #121212;
+  --secondary: white;
+  --outline:#07c589;
+  --blue: #3763ff;
+  color: white;
+  --bcolor:white;
+  --custom:rgb(32, 32, 32);
+  --box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.4);
+  --ccolor:rgba(32,32,32);
+  --cacolor:rgba(32,32,32);
+}
 
 /**********************HEADER SECTION ***********************/
 
 #header {
-  background-color: #fff;
+  background-color:var(--custom);
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +97,7 @@ html {
 
 .logo > a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
 }
 .nav-left ul {
   list-style: none;
@@ -101,7 +119,7 @@ html {
 
 .nav-left ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
   font-weight: 600;
   text-transform: capitalize;
   cursor: pointer;
@@ -216,7 +234,7 @@ html {
   bottom: 0.4rem;
   right: 0;
   font-size: 1.5rem;
-  color: #000;
+  color: var(--bcolor);
   padding: 0.2rem 0.2rem 0.2rem 0rem;
   cursor: pointer;
 }
@@ -267,7 +285,7 @@ html {
   position: absolute;
   width: 28px;
   height: 2px;
-  background: #000;
+  background: var(--bcolor);
   transform: translateY(-5px);
   transition: 0.2s;
 }
@@ -277,7 +295,7 @@ html {
   position: absolute;
   width: 28px;
   height: 2px;
-  background: #000;
+  background: var(--bcolor);
   transform: translateY(5px);
 }
 
@@ -288,6 +306,7 @@ html {
 .toggle.show-nav::after {
   transform: translateY(0px) rotate(-45deg);
 }
+
 
 /**********************HOME SECTION ***********************/
 #home {
@@ -374,8 +393,8 @@ html {
 /*************** About Section **********************/
 #about {
   position: relative;
-  background: #fff;
-  color: #000;
+  background:var(--custom);
+  color: var(--bcolor);
   margin: 3rem auto;
 }
 
@@ -415,17 +434,17 @@ html {
 }
 
 .about-card {
-  background: #effff0 ;
+  background: var(--cacolor);
   padding: 1.5rem 2rem;
   margin: 3rem auto;
   width: 100%;
   border-radius: 4rem 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--box-shadow);
   transition: all 0.3s linear;
 }
 
 .about-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   box-shadow: var(--box-shadow);
 }
 
 header h2 {
@@ -537,7 +556,7 @@ header h4 {
   position: relative;
   padding: 4rem 3rem;
   margin-top: 3rem;
-  background: #fff;
+  background:var(--custom);
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
@@ -616,7 +635,7 @@ header h4 {
 
 .docs-name {
   position: absolute;
-  background-color: rgba(225, 225, 225, 1);
+  background-color: var(--ccolor);
   padding: 1rem 1.5rem;
   width: 100%;
   border-radius: 0 0 4.7rem 0;
@@ -632,7 +651,7 @@ header h4 {
 .docs-name h5 {
   font-size: 1rem;
   font-weight: 600;
-  color: #000;
+  color: var(--bcolor);
 }
 
 /********************** professionals *******************/
@@ -641,7 +660,7 @@ header h4 {
   width: 50%;
   padding: 3rem;
   margin: 0 auto;
-  background-color: #fff;
+  background:var(--custom);
 }
 
 .client-name {
@@ -662,9 +681,9 @@ header h4 {
 
 .testimonials-content {
   position: relative;
-  background: #fff;
+  background:var(--custom);
   padding: 2rem 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+   box-shadow: var(--box-shadow);
   border-radius: 1rem;
   margin: 4rem auto 2.5rem auto;
 }
@@ -724,7 +743,7 @@ header h4 {
 
 .footer-bottom nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
 }
 
 .footer-bottom nav ul li:hover {
@@ -760,14 +779,14 @@ header h4 {
   text-align: center;
   line-height: 2rem;
   margin-top: 1rem;
-  color: #000;
+  color: var(--bcolor);
   font-family: "Times New Roman", Times, serif;
 }
 
 .footer-bottom .copyright a {
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: var(--bcolor);
   text-transform: uppercase;
 }
 
@@ -778,6 +797,9 @@ header h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+  }
+    .moon{
+    margin-right: 60px;
   }
 
   #header {
@@ -922,6 +944,9 @@ header h4 {
   .nav-left ul li a {
     padding: 1rem;
   }
+  .moon{
+    margin-right: 60px;
+  }
 
   /**********************HOME SECTION ***********************/
   #home {
@@ -1015,3 +1040,60 @@ header h4 {
     font-size: 0.9rem;
   }
 }
+
+.moon{
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+
+
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+	box-sizing:border-box;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+} 
+
+
+
+
