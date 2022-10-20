@@ -24,6 +24,8 @@ toggle.addEventListener("click", () => {
 
 lists.forEach((btn) => {
   btn.addEventListener("click", (element) => {
+    toggle.classList.toggle("show-nav");
+    nav.classList.toggle("show-nav");
     lists.forEach((link) => link.classList.remove("active"));
     element.target.classList.add("active");
   });
