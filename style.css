@@ -17,6 +17,9 @@ html {
   --outline: #07c589;
   --secondary: #696969;
   --blue: #3763ff;
+  --custom:#fff;
+  --bcolor:#000;
+  --box-shadow:0px 5px 15px rgba(0,0,0,.4);
   /* #0a0837 */
 
   --font: "Fjalla One", sans-serif;
@@ -24,11 +27,22 @@ html {
   --transition: all 0.2s ease;
   scroll-behavior: smooth;
 }
+.dark {
+  background-color: black;
+  --primary: black;
+  --secondary: white;
+  --outline:#07c589;
+  --blue: #3763ff;
+  color: white;
+  --bcolor:white;
+  --custom:black;
+  --box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.4);
+}
 
 /**********************HEADER SECTION ***********************/
 
 #header {
-  background-color: #fff;
+  background-color: var(--custom);
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +93,7 @@ html {
 
 .logo > a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
 }
 .nav-left ul {
   list-style: none;
@@ -101,7 +115,7 @@ html {
 
 .nav-left ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
   font-weight: 600;
   text-transform: capitalize;
   cursor: pointer;
@@ -216,7 +230,7 @@ html {
   bottom: 0.4rem;
   right: 0;
   font-size: 1.5rem;
-  color: #000;
+  color:  var(--bcolor);
   padding: 0.2rem 0.2rem 0.2rem 0rem;
   cursor: pointer;
 }
@@ -374,8 +388,8 @@ html {
 /*************** About Section **********************/
 #about {
   position: relative;
-  background: #fff;
-  color: #000;
+  background: var(--custom);
+  color: var(--bcolor);
   margin: 3rem auto;
 }
 
@@ -415,17 +429,17 @@ html {
 }
 
 .about-card {
-  background: #fff;
+  background: var(--custom);
   padding: 1.5rem 2rem;
   margin: 3rem auto;
   width: 100%;
   border-radius: 4rem 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--box-shadow);
   transition: all 0.3s linear;
 }
 
 .about-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 header h2 {
@@ -537,7 +551,7 @@ header h4 {
   position: relative;
   padding: 4rem 3rem;
   margin-top: 3rem;
-  background: #fff;
+  background: var(--custom);
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
@@ -641,7 +655,7 @@ header h4 {
   width: 50%;
   padding: 3rem;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: var(--custom);
 }
 
 .client-name {
@@ -662,9 +676,9 @@ header h4 {
 
 .testimonials-content {
   position: relative;
-  background: #fff;
+  background:var(--custom);
   padding: 2rem 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--box-shadow);
   border-radius: 1rem;
   margin: 4rem auto 2.5rem auto;
 }
@@ -724,7 +738,7 @@ header h4 {
 
 .footer-bottom nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--bcolor);
 }
 
 .footer-bottom nav ul li:hover {
@@ -759,15 +773,15 @@ header h4 {
   font-weight: 500;
   text-align: center;
   line-height: 2rem;
-  margin-top: 1rem;
-  color: #000;
+  margin-top: 1rem;                                    
+  color: var(--bcolor);
   font-family: "Times New Roman", Times, serif;
 }
 
 .footer-bottom .copyright a {
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: var(--bcolor);
   text-transform: uppercase;
 }
 

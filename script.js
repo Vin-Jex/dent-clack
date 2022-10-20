@@ -131,3 +131,13 @@ const swiper2 = new Swiper(".testimonials", {
   //   el: ".swiper-scrollbar",
   // },
 });
+
+function changeTheme() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
+
+
+
+
+  
