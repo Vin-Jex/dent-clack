@@ -214,15 +214,27 @@ html {
   color: #000;
 }
 
-.nav-right button {
+.nav-right .btn {
   background: #000;
   color: #fff;
   border: 0.1px solid var(--secondary);
 }
 
-.nav-right button:hover {
+.dark .nav-right .btn {
   color: #000;
   background: #fff;
+}
+
+.nav-right .btn:hover,
+.nav-right .btn:focus {
+  color: #000;
+  background: #fff;
+}
+
+.dark .nav-right .btn:hover,
+.dark .nav-right .btn:focus {
+  color: #fff;
+  background: #000;
 }
 
 .nav-right form {
