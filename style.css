@@ -67,12 +67,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  justify-content: space-between;
+  justify-content: right;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
+  -webkit-justify-content: right;
   /* padding: clamp(1rem, 1vw + 1rem, 1rem) clamp(1rem, 1vw + 1rem, 3.2rem); */
   width: 100%;
+  margin-right: 1rem;
 }
 
 .nav-left {
@@ -93,6 +94,7 @@ html {
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 .logo > a {
