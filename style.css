@@ -465,6 +465,7 @@ header h2 {
   font-weight: 600;
   font-family: var(--font);
   padding-bottom: 0.3rem;
+  margin-top:10px;
 }
 
 header h4 {
@@ -594,6 +595,7 @@ header h4 {
   font-weight: 500;
   font-family: var(--font);
   text-transform: capitalize;
+  margin-top:10px;
 }
 
 .services-left ul {
