@@ -182,6 +182,6 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 
 ## Our Top Contributors
 
-<p align="<!-- center -->"><a href="https://github.com/pythoniclaver/Dent-Clack/graphs/contributors">
+<p align="center"><a href="https://github.com/pythoniclaver/Dent-Clack/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=pythoniclaver/Dent-Clack" />
 </a></p>
