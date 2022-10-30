@@ -31,11 +31,11 @@ html {
 }
 .dark {
   background-color:rgb(32, 32, 32);
+  color: white;
   --primary: #121212;
   --secondary: white;
   --outline:#07c589;
   --blue: #3763ff;
-  color: white;
   --bcolor:white;
   --custom:rgb(32, 32, 32);
   --box-shadow: 0px 5px 15px rgba(225, 225, 225, 0.4);
@@ -693,6 +693,12 @@ header h4 {
   justify-content: center;
 }
 
+
+.swiper-wrapper {
+  text-align: center;
+  align-content: center;
+  align-items: flex-start;
+}
 .testimonials-content {
   position: relative;
   background:var(--custom);
