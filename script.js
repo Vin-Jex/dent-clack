@@ -71,7 +71,7 @@ const swiper = new Swiper(".swiper", {
   grabCursor: true,
   speed: 500,
   keyboard: {
-    enabled: true,
+    enabled: false,
   },
   breakpoints: {
     640: {
@@ -113,12 +113,12 @@ const swiper2 = new Swiper(".testimonials", {
     enabled: true,
   },
   pagination: {
-    el: ".swiper-pagination2",
+    el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
     640: {
-      spaceBetween: 40,
+      spaceBetween: 80,
     },
   },
 
