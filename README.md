@@ -1,56 +1,85 @@
 <!-- @format -->
-<center> HACKTOBERFEST 2022</center>
+<center>HACKTOBERFEST 2022 - 2024</center>
 
-# <a name="home"><center> Dent Clack </center></a>
+
+# <a name="home"><center> DentClack </center></a>
 
 
 <!-- ##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)* -->
 
 
-![Project Image](./images/DentClack.png)
+![Project Image](public/DentClack.png)
 
-> Dent Clack is a medical web application that makes booking dental appointments easier and quicker from the comfort of your home.
+> DentClack is a medical web application that makes booking dental appointments easier and quicker from the comfort of your home.
 
 ---
 
 ### Table of Contents
 
-- [Description](#description)
-- [How To Get Started](#getting-started)
-- [Contribution Rules](#contribution-rules📚)
-- [How To Avoid Conflicts](#avoid-conflicts-syncing-your-fork)
-- [FAQs](#faqs-frequently-asked-questions)
-- [Author Info](#author-info)
+1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Teams and Responsibilities](#teams-and-responsibilities)
+4. [How To Get Started](#getting-started)
+5. [Branching Strategy](#branching-strategy)
+5. [Contribution Rules](#contribution-rules📚)
+6. [How To Avoid Conflicts](#avoid-conflicts-syncing-your-fork)
+7. [FAQs](#faqs-frequently-asked-questions)
+6. [Author Info](#author-info)
+6. [Coding Guidelines](#coding-guidelines)
+7. [Deployment](#deployment)
+8. [Contributing](#contributing)
+9. [Contact](#contact)
 
----
+## Project Overview
 
-## Description
+**DentClack is a medical web application that aims to help make booking dental appointments quick and easy from the comfort of your home. This is a simple project built under the idea of helping beginners get more familiar with open source. Happy Coding 💙 :) !**
 
-**Dent Clack is a medical web application that aims to help make booking dental appointments quick and easy from the comfort of your home. This is a simple project built under the idea of helping beginners get more familiar with open source. Happy Coding 💙 :) !**
+## Tech Stack
 
-#### Technologies
-
-- HTML
-- CSS
-- JavaScript
+- **Framework and Tools**: NextJS, NodeJS
+- **Language**: TypeScript, JavaScript
+- **Libraries**: SwiperJS, ChartJS, Material Icons
+- **Styling**: Tailwind, Next Font, Next Theme
+- **Version Control**: Git and GitHub
 
 [Back To The Top](#home)
 
 ---
 
+## Teams and Responsibilities
+
+### Team 1: Frontend Development
+- Responsible for building the user interface using React components.
+- Implementing responsive design with Tailwind CSS.
+- Ensuring accessibility and cross-browser compatibility.
+
+### Team 2: Backend Development
+- Setting up Node.Js API routes.
+- Integrating with external APIs for anime data.
+- Managing database connections and data flow.
+
+### Team 3: Quality Assurance and Testing
+- Writing and maintaining unit and integration tests.
+- Performing code reviews and ensuring code quality.
+- Conducting user acceptance testing (UAT) and bug tracking.
+
 ## Getting Started
-1. **Fork the repo**: Just click on the "[Fork](https://github.com/pythoniclaver/Dent-Clack/fork)" to fork the project or click on the second icon at the top right to fork
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Fork the repository
+1. Click on the "[Fork](https://www.github.com/vin-jex/dent-clack/fork)" to fork the project or click on the second icon at the top right to fork
 
 2. **Clone the forked project**
-
      ```bash
-     git clone https://github.com/<your-github-username>/Dent-Clack
+     git clone https://www.github.com/<your-github-username>/dent-clack
      ```
 
 3. **Navigate to the project directory**
-
      ```bash
-     cd Dent-Clack
+     cd dent-clack
      ```
 
 4. **Run the project on your browser**
@@ -68,28 +97,54 @@
     ```bash
     start .
     ```
-      > Then run ```index.html``` on your browser
-  
+
+5. **Install dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+6 **Running the Development Server**
+  ```bash
+    npm run dev
+    # or
+    yarn dev
+  ```
+ > Open application on [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Branching Strategy
+- **Main Branch**: Protected branch. Only the release manager can merge into this branch.
+- **Develop Branch**: Integration branch for feature branches.
+- **Feature Branches**: Branch off from `develop` for new features or bug fixes. Naming convention: `feature/feature-name`.
+- **Hotfix Branches**: Branch off from `main` for urgent fixes. Naming convention: `hotfix/hotfix-name`. 
+
 
 ## Made any changes?
 
-- Make a new branch: 
+  ### Create a new branch: 
   ```bash
-  git switch -C <new-branch-name>
+  git switch -C feature/your-feature-name
+  ```
+  OR
+  ```bash
+  git checkout -b feature/your-feature-name
   ```
   
-- Add and Commit changes in the new branch 
+  ### Add and Commit changes in the new branch 
    ```bash
   git add <file-name>
   git commit -m <commit-message>
   ```
-- Push to your forked repository
+  ### Push to your forked repository
      ```bash
-     git push <remote-name e.g origin> <branch-name>
+     git push <remote-name e.g origin> feature/your-feature-name
      ```
 
 5. **Create a new pull request from your forked repository**
-<br><br>
+<br />
+<br />
 
 # Contribution Rules📚:
 
@@ -108,7 +163,7 @@
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
 
 ```terminal
-git remote add upstream https://github.com/pythoniclaver/Dent-Clack
+git remote add upstream https://github.com/vin-jex/dent-clack
 ```
 
 Verify if new remote has been added by running the command:
@@ -135,7 +190,7 @@ For more information on syncing forks [read this article from Github](https://he
 
 ## License
 
-Dent-Clack is licensed under the MIT License - Checkout [LICENSE](/LICENSE) for details.
+DentClack is licensed under the MIT License - Checkout [LICENSE](/LICENSE) for details.
 
 
 P.S. Star ⭐ and Share this repository, if you had fun!!! 😊 
@@ -148,7 +203,7 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
   - Anyone with a github account and who is signed up for
     [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Who are you and why are you doing this?
-  - I are a programmer from Nigeria [Vincent](https://www.linkedin.com/in/pythoniclaver/).
+  - I are a programmer from Nigeria [Vincent](https://www.linkedin.com/in/vinjex/).
    I'm doing this because I love Open Source and Hacktoberfest. I want to make it easier for people to get started with Hacktoberfest and Open Source.
 - Why are you not using digitalocean?
 
@@ -167,10 +222,10 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
   
 ## Author Info
 
-- Twitter - [@Vincent](https://twitter.com/vincent_coder)
-- LinkedIn - [@Pythonichub](https://linkedin.com/in/pythonichub)
-- GitHub - [@Pythoniclaver](https://github.com/pythoniclaver)
-- Website - [Pythonichub](https://pythonichub.vercel.app)
+- Twitter - [@VinJex](https://x.com/_vinjex)
+- LinkedIn - [@Vinjex](https://linkedin.com/in/vinjex)
+- GitHub - [@Vin-Jex](https://www.github.com/vin-jex)
+- Website - [VinJex](https://www.vinjex.co)
 
 [Back To The Top](#home)
 
@@ -182,6 +237,6 @@ P.S. Star ⭐ and Share this repository, if you had fun!!! 😊
 
 ## Our Top Contributors
 
-<p align="center"><a href="https://github.com/pythoniclaver/Dent-Clack/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=pythoniclaver/Dent-Clack" />
+<p align="center"><a href="https://github.com/vin-jex/dent-clack/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=vin-jex/dent-clack" />
 </a></p>
