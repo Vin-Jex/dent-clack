@@ -8,7 +8,7 @@ export default function Hero() {
 
     return (
         <section className={`${styles.paddingY} `}>
-            <div>
+            <div className="mb-[1.8rem]">
                 
             <h1 className="text-[4.3rem] font-bold leading-[6rem] mb-4">We Make Your <br/>
              <span className="text-[#07C589]">Smile</span> Our Priority.
@@ -23,7 +23,7 @@ export default function Hero() {
 
             </div>
 
-            <Button>Click</Button>
+            <Button width="auto" size="lg">Book an Appointment</Button>
 
         </section>
 

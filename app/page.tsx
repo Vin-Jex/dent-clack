@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className=" bg-[#07C589] bg-opacity-5 ">
         
-        <div className={`${styles.paddingX}   w-full border-b border-stone-300`}>
+        <div className={`${styles.paddingX}   w-full border-b border-stone-300 fixed`}>
             <NavBar/>
         </div>
          

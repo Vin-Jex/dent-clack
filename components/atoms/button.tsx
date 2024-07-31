@@ -10,7 +10,8 @@ import React, {
     children: ReactNode;
     size?: "sm" | "md" | "lg";
     color?: "blue" | "outline" | "red" | "yellow";
-    width?: "full" | "auto" | "fit";
+    width?: "full" | "auto" | "fit"| "specs";
+    
   }
   const Button: React.FC<ButtonProps> = ({
     children,
@@ -37,8 +38,9 @@ import React, {
   
     const widthClassName = {
       full: "w-full",
-      auto: "w-full max-w-[100px] md:max-w-[130px]",
+      auto: "w-full max-w-[160px] md:max-w-[180px]",
       fit: "w-fit",
+      specs: "w-full max-w-[110px] "
     }[width];
   
     const colorClassName = {
@@ -50,7 +52,7 @@ import React, {
   
     return (
       <button
-        className={`flex items-center justify-center space-x-1  font-roboto font-[100rem] ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.5rem]`}
+        className={`flex items-center justify-center space-x-1  font-poppins  ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.2rem] h-[2.2rem] text-base`}
         {...props}
       >
         {children}
