@@ -20,6 +20,9 @@ body {
   color: #1E1E1E;
   background: #FFFFFF
     rgb(var(--background-start-rgb));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @layer utilities {

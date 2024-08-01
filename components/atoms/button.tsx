@@ -8,16 +8,18 @@ import React, {
   
   interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
-    size?: "sm" | "md" | "lg";
+    size?: "sm" | "md" | "lg"|"height";
     color?: "blue" | "outline" | "red" | "yellow";
     width?: "full" | "auto" | "fit"| "specs";
+    // height?: "specs"
     
   }
   const Button: React.FC<ButtonProps> = ({
     children,
-    size = "md",
+    size = "lg",
     color = "blue",
     width = "auto",
+    // height = "specs",
     ...props
   }) => {
     const [isClient, setIsClient] = useState(false);
@@ -31,17 +33,22 @@ import React, {
     }
     
     const sizeClassName = {
-      sm: "px-2 md:px-3 lg:px-4 py-2.5 lg:py-3 text-sm md:text-base font-medium",
-      md: "px-2 sm:px-3.5 md:px-5 py-1 lg:py-3 text-lg font-medium",
+      sm: "px-2 md:px-3 lg:px-4 py-2.5 lg:py-3 text-sm md:text-base",
+      md: "px-2 py-[20rem] sm:px-3.5 md:px-5 py-1 lg:py-3 text-base",
       lg: "px-3 md:px-4 lg:px-6 py-2.5 lg:py-3 text-lg",
+      height:"h-[2.8rem] px-2 py-[20rem] sm:px-3.5 md:px-5 py-1 lg:py-3",
     }[size];
   
     const widthClassName = {
       full: "w-full",
-      auto: "w-full max-w-[160px] md:max-w-[180px]",
+      auto: "w-full max-w-[160px] md:max-w-[200px]",
       fit: "w-fit",
       specs: "w-full max-w-[110px] "
     }[width];
+
+    // const heightClassName = {
+    //  specs:"h-[3.2rem] "
+    // }[height];
   
     const colorClassName = {
       blue: "bg-primary text-[#fdfdfd]", // bg of dark cyan-blue
@@ -52,7 +59,7 @@ import React, {
   
     return (
       <button
-        className={`flex items-center justify-center space-x-1  font-poppins  ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.2rem] h-[2.2rem] text-base`}
+        className={`flex items-center justify-center space-x-1  font-poppins  ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.2rem] h-[2.2rem] text-base `}
         {...props}
       >
         {children}

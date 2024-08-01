@@ -2,9 +2,9 @@
 
 import { navLinks } from "@/constants";
 import Button from "../atoms/button";
-import WbSunnyTwoToneIcon from '@mui/icons-material/WbSunnyTwoTone';
-import NightlightRoundOutlinedIcon from '@mui/icons-material/NightlightRoundOutlined';
-import { borders } from '@mui/system';
+import {LightMode} from '@mui/icons-material';
+import {NightlightRoundOutlined} from '@mui/icons-material';
+
 
 
 
@@ -21,7 +21,7 @@ export default function navBar() {
 
             <ul className="w-full flex-row hidden sm:flex place-content-end pr-32 ">
                 {navLinks.map((nav, index) => (
-                    <li className="pl-8 font-poppins text-[1rem] hover:text-[#07C589] list-none">{nav.title}</li>
+                    <li key={index} className="pl-8 font-poppins text-[1rem] hover:text-[#07C589] list-none">{nav.title}</li>
                 ))}
             </ul>
 
@@ -33,11 +33,11 @@ export default function navBar() {
 
                         <div className="flex items-center justify-center place-content-center place-items-center bg-[#07C589] h-[1.4rem] w-full max-w-[1.4rem] rounded-[3.1rem]  place-self-center ">
 
-                                <WbSunnyTwoToneIcon sx={{color:"#fdfdfd",width:"65%"}}/>
+                                <LightMode sx={{color:"#fdfdfd",width:"65%"}}/>
 
 
                         </div> 
-                        <div> < NightlightRoundOutlinedIcon sx={{ borderColor:"#dcd5d5",width:"65%"}}/> </div>
+                        <div className=" place-self-center ml-2"> < NightlightRoundOutlined sx={{ width:"80%", color:"#fdfdfd" }}/> </div>
 
                     </div>
 

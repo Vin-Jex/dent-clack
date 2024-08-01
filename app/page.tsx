@@ -2,7 +2,7 @@ import NavBar from "@/components/molecules/NavBar";
 import Hero from "@/components/LandingPage/Hero"
 
 import AboutSection from "@/components/LandingPage/About";
-import styles from "@/style";
+
 
 
 
