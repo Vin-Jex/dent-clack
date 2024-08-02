@@ -15,11 +15,11 @@ export default function Home() {
 
 
   return (
-    <main className= "overflow-hidden font-poppins  flex-col text-[#1E1E1E]">
+    <main className= "overflow-hidden font-poppins  flex-col text-[#1E1E1E] dark:text-[#FFFFFFCC]">
 
-      <div className=" bg-[#07C589] bg-opacity-5 ">
+      <div className=" bg-[#07C589]/10 dark:bg-green-950">
         
-        <div className={`${styles.paddingX}   w-full border-b border-stone-300 fixed`}>
+        <div className={`${styles.paddingX}   w-full border-b border-stone-300`}>
             <NavBar/>
         </div>
          
