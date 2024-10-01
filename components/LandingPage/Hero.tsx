@@ -1,4 +1,5 @@
-import Button from "../atoms/Button.tsx";
+
+import Button from "../atoms/Button";
 import HeroMap from "./heroMap";
 
 // import Daniel from "c/daniel.jpg"
