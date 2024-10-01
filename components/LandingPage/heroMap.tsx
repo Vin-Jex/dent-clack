@@ -18,25 +18,25 @@ export default function HeroMap() {
     {
       id: 1,
       name: Marcelo, //marcelo,
-      roundedClass: 'rounded-tl-[8rem]',
+      roundedClass: 'sm:rounded-tl-[8rem] rounded-tl-[5rem]',
     },
 
     {
       id: 2,
       name: Lola, //lola,
-      roundedClass: 'rounded-tr-[8rem]',
+      roundedClass: 'sm:rounded-tr-[8rem] rounded-tr-[5rem]',
     },
 
     {
       id: 3,
       name: Daniel, //daniel,
-      roundedClass: 'rounded-bl-[8rem]',
+      roundedClass: 'sm:rounded-bl-[8rem] rounded-bl-[5rem]',
     },
 
     {
       id: 4,
       name: Nwanboje, //nwanboje,
-      roundedClass: 'rounded-br-[8rem]',
+      roundedClass: 'sm:rounded-br-[8rem] rounded-br-[5rem]',
     },
   ];
   return (
