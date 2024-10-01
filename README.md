@@ -1,16 +1,22 @@
+
+---
+
 <!-- @format -->
 <center>HACKTOBERFEST 2022 - 2024</center>
 
-
-# <a name="home"><center> DentClack </center></a>
-
-
-<!-- ##### **Note:** *The Project your going to be working on is current being developed, it will be live in the next 3days (16th of october 2022)* -->
-
+# <a id="home" name="home"><center> DentClack </center></a>
 
 ![Project Image](public/DentClack.png)
 
-> DentClack is a medical web application that makes booking dental appointments easier and quicker from the comfort of your home.
+> **DentClack** is a medical web application that makes booking dental appointments easier and quicker from the comfort of your home.
+
+---
+
+### ⭐ Before You Start: Like and Star the Project!
+
+If you find the **DentClack** project interesting or helpful, please consider liking and starring the repository before contributing. This small action helps us gain visibility and motivates the community to keep growing!
+
+Simply click the **Star** button at the top right corner of the [DentClack GitHub repo](https://github.com/vin-jex/dent-clack) ⭐!
 
 ---
 
@@ -21,26 +27,62 @@
 3. [Teams and Responsibilities](#teams-and-responsibilities)
 4. [How To Get Started](#getting-started)
 5. [Branching Strategy](#branching-strategy)
-5. [Contribution Rules](#contribution-rules📚)
-6. [How To Avoid Conflicts](#avoid-conflicts-syncing-your-fork)
-7. [FAQs](#faqs-frequently-asked-questions)
-6. [Author Info](#author-info)
-6. [Coding Guidelines](#coding-guidelines)
-7. [Deployment](#deployment)
-8. [Contributing](#contributing)
-9. [Contact](#contact)
+6. [Contribution Rules](#contribution-rules📚)
+7. [How To Avoid Conflicts](#avoid-conflicts-syncing-your-fork)
+8. [FAQs](#faqs-frequently-asked-questions)
+9. [Author Info](#author-info)
+10. [Coding Guidelines](#coding-guidelines)
+11. [Deployment](#deployment)
+12. [Contributing](#contributing)
+13. [Contact](#contact)
+14. [Project Structure and Detailed Methodology](#project-structure-and-methodology)
+
+---
 
 ## Project Overview
 
-**DentClack is a medical web application that aims to help make booking dental appointments quick and easy from the comfort of your home. This is a simple project built under the idea of helping beginners get more familiar with open source. Happy Coding 💙 :) !**
+**DentClack** is a medical web application designed to simplify the process of booking dental appointments. It provides a seamless user experience, allowing patients to book dental services online, without needing to call a clinic or physically visit.
+
+This project is a great opportunity for beginners to contribute to open-source and is open for contributions as part of **Hacktoberfest 2022-2024**.
+
+### Goals:
+
+- Easy-to-use interface for booking dental appointments.
+- Responsive design that works on all devices.
+- Secure authentication and appointment management.
+- Beginner-friendly for Hacktoberfest contributions.
+
+Happy Coding 💙 :) !
+
+---
 
 ## Tech Stack
 
-- **Framework and Tools**: NextJS, NodeJS
-- **Language**: TypeScript, JavaScript
-- **Libraries**: SwiperJS, ChartJS, Material Icons
-- **Styling**: Tailwind, Next Font, Next Theme
-- **Version Control**: Git and GitHub
+**Framework and Tools**:
+- **Next.js**: React-based framework for server-side rendering and static website generation.
+- **Node.js**: Backend runtime environment for handling server logic.
+
+**Languages**:
+- **TypeScript**
+- **JavaScript**
+
+**Libraries**:
+- **Swiper.js**: For interactive carousels and sliders.
+- **Chart.js**: For graphical representations of data.
+- **Material Icons**: For adding icons to the application.
+
+**Styling**:
+- **Tailwind CSS**: Utility-first CSS framework for fast UI development.
+- **Next Font**: For custom font management.
+- **Next Theme**: For managing theming and dark mode.
+
+**Version Control**:
+- **Git and GitHub**: For tracking changes and collaborating.
+
+**DevOps**:
+- **Docker**: Containerizing the application for ease of deployment.
+- **GitHub Actions**: For continuous integration and deployment.
+- **AWS**: Hosting the production environment.
 
 [Back To The Top](#home)
 
@@ -48,195 +90,182 @@
 
 ## Teams and Responsibilities
 
+The project is divided into multiple teams to ensure smooth progress. You can join any of these based on your interest and expertise:
+
 ### Team 1: Frontend Development
-- Responsible for building the user interface using React components.
-- Implementing responsive design with Tailwind CSS.
-- Ensuring accessibility and cross-browser compatibility.
+- Build the user interface using **React** and **Next.js** components.
+- Implement responsive design using **Tailwind CSS**.
+- Ensure accessibility and cross-browser compatibility.
+- Manage state using the **Context API** or **Redux**.
 
 ### Team 2: Backend Development
-- Setting up Node.Js API routes.
-- Integrating with external APIs for anime data.
-- Managing database connections and data flow.
+- Develop API routes using **Node.js** and **Express**.
+- Integrate external APIs and handle business logic.
+- Manage database connections with **MongoDB** and **Mongoose**.
+- Secure the app using **OAuth** and **JWT** for authentication.
 
-### Team 3: Quality Assurance and Testing
-- Writing and maintaining unit and integration tests.
-- Performing code reviews and ensuring code quality.
-- Conducting user acceptance testing (UAT) and bug tracking.
+### Team 3: DevOps and Deployment
+- Containerize the application using **Docker**.
+- Set up continuous integration and deployment pipelines using **GitHub Actions**.
+- Manage cloud environments and production deployment on **AWS** (EC2, S3, etc.).
+
+### Team 4: Quality Assurance and Testing
+- Write and maintain tests using **Jest** and **Cypress**.
+- Perform code reviews and ensure code quality.
+- Conduct user acceptance testing (UAT) and bug tracking.
+
+[Back To The Top](#home)
+
+---
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js (version 14 or higher)
-- npm or yarn
+To get started with **DentClack**, make sure you have the following installed on your system:
+- **Node.js** (version 14 or higher)
+- **npm** or **yarn** (for managing packages)
+- **Docker** (for running the application in containers - Although not required for now.)
+- **AWS account** (optional, for testing deployment)
 
-### Fork the repository
-1. Click on the "[Fork](https://www.github.com/vin-jex/dent-clack/fork)" to fork the project or click on the second icon at the top right to fork
+### Fork the Repository
+1. Fork the [DentClack repo](https://github.com/vin-jex/dent-clack/fork) to your GitHub account.
 
-2. **Clone the forked project**
-     ```bash
-     git clone https://www.github.com/<your-github-username>/dent-clack
-     ```
-
-3. **Navigate to the project directory**
-     ```bash
-     cd dent-clack
-     ```
-
-4. **Run the project on your browser**
-     For VSCode
-
+2. **Clone the forked project**:
     ```bash
-      code .
-    ```
-     Other Text Editor on Mac
-
-    ```bash
-      open ~
-    ```
-    On Windows
-    ```bash
-    start .
+    git clone https://github.com/<your-github-username>/dent-clack
     ```
 
-5. **Install dependencies**:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+3. **Navigate to the project directory**:
+    ```bash
+    cd dent-clack
+    ```
 
-6 **Running the Development Server**
-  ```bash
+4. **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+5. **Run the development server**:
+    ```bash
     npm run dev
     # or
     yarn dev
-  ```
- > Open application on [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```
 
-
-## Branching Strategy
-- **Main Branch**: Protected branch. Only the release manager can merge into this branch.
-- **Develop Branch**: Integration branch for feature branches.
-- **Feature Branches**: Branch off from `develop` for new features or bug fixes. Naming convention: `feature/feature-name`.
-- **Hotfix Branches**: Branch off from `main` for urgent fixes. Naming convention: `hotfix/hotfix-name`. 
-
-
-## Made any changes?
-
-  ### Create a new branch: 
-  ```bash
-  git switch -C feature/your-feature-name
-  ```
-  OR
-  ```bash
-  git checkout -b feature/your-feature-name
-  ```
-  
-  ### Add and Commit changes in the new branch 
-   ```bash
-  git add <file-name>
-  git commit -m <commit-message>
-  ```
-  ### Push to your forked repository
-     ```bash
-     git push <remote-name e.g origin> feature/your-feature-name
-     ```
-
-5. **Create a new pull request from your forked repository**
-<br />
-<br />
-
-# Contribution Rules📚:
-
-- Make a branch for every contribution you wish to make
-- Open a pull request after you are done but note DO NOT MERGE it will only be done after the collaboratos have carefully reviewed your work
-- ⚠️ Do NOT remove other content If not necessary ⚠️
-- If you have any special edits please contact a collaborator
-- Code styling wont be heavily enforced but please write readable code
-- Don't forget to add your name to the contributors list file
-- Make your pull requests in an incremental manner so as to avoid merging bad code
-- Read the [CONTRIBUTING.md](/CONTRIBUTING.md) file for detailed information
-<br>
-
-## Avoid Conflicts {Syncing your fork}
-
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
-
-```terminal
-git remote add upstream https://github.com/vin-jex/dent-clack
-```
-
-Verify if new remote has been added by running the command:
-
-```terminal
-git remote -v
-```
-
-To pull any new changes from your parent repo simply run
-
-```terminal
-git merge upstream/main
-```
-
-This will give you any eventual conflicts and allow you to easily solve them in your repo. It's a good idea to use it frequently in between your own commits to make sure that your repo is up to date with its parent.
-
-For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
-
+> Open the application in your browser at `http://localhost:3000` to see the result.
 
 [Back To The Top](#home)
 
 ---
 
+## Branching Strategy
+
+We follow a structured branching strategy to ensure smooth integration and collaboration:
+
+- **Main Branch**: Protected branch. Only the release manager can merge changes into this branch.
+- **Develop Branch**: Integration branch where feature branches are merged after passing all tests.
+- **Feature Branches**: For new features, branch off from `develop` with a naming convention like `feature/feature-name`.
+- **Hotfix Branches**: For critical fixes that need to go directly into `main`. Branch off from `main` and use a naming convention like `hotfix/hotfix-name`.
+
+[Back To The Top](#home)
+
+---
+
+## Contribution Rules 📚
+
+### **Before You Start Contributing:**
+1. **Like and Star the Project**: As mentioned earlier, please star the [GitHub repo](https://github.com/vin-jex/dent-clack) if you haven’t already!
+2. **Read the Documentation**: Familiarize yourself with the [README](https://github.com/vin-jex/dent-clack/blob/main/README.md) and [Contributing Guide](https://github.com/vin-jex/dent-clack/blob/main/CONTRIBUTING.md) to understand the project structure and contribution process.
+3. **Get Assigned**: Make sure to comment on an issue before working on it and wait to be assigned.
+
+### **Rules for Contributions:**
+- **Create a branch**: Work on your feature or bug fix in a new branch (follow the naming convention described above).
+- **Pull latest changes**: Ensure your branch is updated with the latest changes from the `develop` branch.
+- **Follow coding guidelines**: Ensure your code adheres to the [Coding Guidelines](#coding-guidelines).
+- **Submit a Pull Request (PR)**: Once your work is complete, submit a PR referencing the issue number.
+- **Review process**: Wait for your PR to be reviewed. PRs must pass all tests and be approved by a collaborator before they can be merged.
+
+---
+
+## How To Avoid Conflicts {Syncing your fork}
+
+To avoid merge conflicts, sync your fork with the upstream repository regularly:
+
+1. **Add upstream remote**:
+    ```bash
+    git remote add upstream https://github.com/vin-jex/dent-clack
+    ```
+
+2. **Verify**:
+    ```bash
+    git remote -v
+    ```
+
+3. **Fetch and merge upstream changes**:
+    ```bash
+    git fetch upstream
+    git merge upstream/main
+    ```
+
+For more details on syncing forks, refer to [GitHub’s guide](https://help.github.com/articles/syncing-a-fork/).
+
+[Back To The Top](#home)
+
+---
+
+## Project Structure and Detailed Methodology
+
+For an in-depth look at the project structure, including the architecture of the frontend, backend, testing strategies, and DevOps processes, please refer to the [Project Structure and Methodology Document](docs/PROJECT_STRUCTURE.md).
+
+This document covers:
+- **Frontend architecture**: React components, state management, routing, and theming.
+- **Backend architecture**: API design, database models, and security protocols.
+- **DevOps setup**: Continuous integration, Docker setup, and cloud deployment.
+- **Testing methodologies**: Unit testing, integration testing, and end-to-end testing.
+
+[Back To The Top](#home)
+
+---
 
 ## License
 
-DentClack is licensed under the MIT License - Checkout [LICENSE](/LICENSE) for details.
-
-
-P.S. Star ⭐ and Share this repository, if you had fun!!! 😊 
+This project is licensed under the **MIT License**. For more information, see the [LICENSE](https://github.com/vin-jex/dent-clack/blob/main/LICENSE.md) file.
 
 ---
 
-# FAQs (Frequently Asked Questions)
+## FAQs (Frequently Asked Questions)
 
-- Who can contribute?
-  - Anyone with a github account and who is signed up for
-    [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
-- Who are you and why are you doing this?
-  - I are a programmer from Nigeria [Vincent](https://www.linkedin.com/in/vinjex/).
-   I'm doing this because I love Open Source and Hacktoberfest. I want to make it easier for people to get started with Hacktoberfest and Open Source.
-- Why are you not using digitalocean?
-
-  - Because we only know JavaScript and suck at servers :).
-
-- How many pull request (PR) must be made, if I want to get an awesome tshirt from Hacktoberfest 2022?
-  - 4
-- How do I track my progress to get an awesome shirt from Hacktoberfest 2022?
-  - [go to :](https://hacktoberfest.digitalocean.com/profile/) (Check Out Your Own Stats at Right Top)
-- What is the duration of Hacktoberfest 2022?
-  - It is from 1st october to 31st october 2022...
-- What is the event for?
-  - For the open source community engagement
-
-  ---
+- **Who can contribute?**
+  - Anyone with a GitHub account who is signed up for [Hacktoberfest](https://hacktoberfest.digitalocean.com/).
   
+- **How many pull requests (PRs) must I make to get the Hacktoberfest shirt?**
+  - You need to make
+
+ four (4) accepted PRs during the Hacktoberfest event.
+
+ - **Why aren't we using AWS?**
+   - We are utilizing Cloudinary for media storage and Vercel for deployment due to their streamlined integration with our tech stack.
+
+---
+
 ## Author Info
 
-- Twitter - [@VinJex](https://x.com/_vinjex)
-- LinkedIn - [@Vinjex](https://linkedin.com/in/vinjex)
-- GitHub - [@Vin-Jex](https://www.github.com/vin-jex)
-- Website - [VinJex](https://www.vinjex.co)
+- Twitter: [@VinJex](https://x.com/_vinjex)
+- LinkedIn: [@VinJex](https://linkedin.com/in/vinjex)
+- GitHub: [@Vin-Jex](https://www.github.com/vin-jex)
 
 [Back To The Top](#home)
 
 ---
 
-##### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible 😲._
+### Top Contributors
 
-<br>
+<p align="center">
+    <a href="https://github.com/vin-jex/dent-clack/graphs/contributors">
+      <img src="https://contributors-img.web.app/image?repo=vin-jex/dent-clack" />
+    </a>
+</p>
 
-## Our Top Contributors
-
-<p align="center"><a href="https://github.com/vin-jex/dent-clack/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=vin-jex/dent-clack" />
-</a></p>
+---
