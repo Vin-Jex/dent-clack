@@ -1,8 +1,4 @@
-// import navLinks from "@/constants"
 import { navLinks } from "@/constants";
-import Button from "../atoms/Button";
-import { LightMode } from "@mui/icons-material";
-import { NightlightRoundOutlined } from "@mui/icons-material";
 import ThemeToggle from "../atoms/themeToggle";
 
 export default function navBar() {
