@@ -17,22 +17,24 @@ export default function Home() {
   return (
     <main className= "overflow-hidden font-poppins  flex-col text-[#1E1E1E]">
 
-      <div className=" bg-[#07C589] bg-opacity-5 ">
+      <div className=" bg-[#07C589] bg-opacity-5 dark:text-[#FFFFFF] dark:bg-green-900">
         
-        <div className={`${styles.paddingX}   w-full border-b border-stone-300 fixed`}>
+        <div className={`${styles.paddingX}   w-full border-b border-stone-300 `}>
             <NavBar/>
         </div>
          
-        <div className={`${styles.paddingX}`}>
+        <div className={`${styles.paddingX} `}>
             <Hero/>
         </div>
           
           
       </div>
 
-      
+      <div className={`${styles.paddingX} bg-[#FFFFFF] dark:bg-[#202423]`}>
+          <AboutSection/>
+      </div>
 
-      <AboutSection/>
+      
 
 
     </main>

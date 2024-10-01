@@ -34,9 +34,9 @@ import React, {
     
     const sizeClassName = {
       sm: "px-2 md:px-3 lg:px-4 py-2.5 lg:py-3 text-sm md:text-base",
-      md: "px-2 py-[20rem] sm:px-3.5 md:px-5 py-1 lg:py-3 text-base",
+      md: "px-2 py-[1rem] sm:px-3.5 md:px-5 py-1 lg:py-3 text-sm sm:text-base",
       lg: "px-3 md:px-4 lg:px-6 py-2.5 lg:py-3 text-lg",
-      height:"h-[2.8rem] px-2 py-[20rem] sm:px-3.5 md:px-5 py-1 lg:py-3",
+      height:"h-[2.8rem] px-3.5 text-sm py-[1rem] sm:px-3.5 md:px-5 py-1 lg:py-3",
     }[size];
   
     const widthClassName = {

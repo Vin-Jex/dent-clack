@@ -29,13 +29,13 @@ export default function ThemeToggle() {
                     
             <Button width="specs" size="md">Login </Button>
 
-        <div className="flex bg-[#fdfdfd] border-2 border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.4rem] h-[1.6rem] ml-[1.2rem] rounded-[1.5rem] overflow-hidden p-[0.2rem] dark:bg-green-900"
+        <div className="flex bg-[#fdfdfd] border border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.6rem] h-[1.7rem] ml-[1.2rem] rounded-[1.5rem]   dark:bg-green-900"
         onClick={()=> setDarkMode(!darkMode)}> 
 
-                <LightMode className="!text-base ml-[2px] place-self-center z-10 text-[#FFFFFF] dark:text-[#FFFFFF66]/40" />
+                <LightMode className="!text-base ml-[5.5px] place-self-center z-10 text-[#FFFFFF] dark:text-[#FFFFFF66]/40 " />
 
                 <div 
-                className={`flex items-center justify-center place-content-center place-items-center bg-[#07C589] h-[1.2rem] w-full max-w-[1.2rem] rounded-full place-self-center transform z-0 transition-transform duration-300 ${darkMode ? "ml-[1.7rem]" :  "mr-[1.8rem]"} absolute `}
+                className={`flex bg-[#07C589] h-[1.8rem] w-full max-w-[1.8rem] rounded-full place-self-center transform z-0 transition-transform duration-300 ${darkMode ? "ml-[1.7rem]" :  "mr-[5.2rem]"} absolute `}
                 >
                     {/* sx={{color:"#fdfdfd",width:"65%"}} */}
 
@@ -43,7 +43,7 @@ export default function ThemeToggle() {
 
                 </div> 
 
-                   < DarkModeOutlined  className="!text-base mr-[2.2px] place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] ml-3 "/> 
+                   < DarkModeOutlined  className="!text-base mr-[2.2px] place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] ml-[12px] "/> 
 
         </div>
 
