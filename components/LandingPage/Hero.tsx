@@ -7,7 +7,7 @@ import HeroMap from './heroMap';
 export default function Hero() {
   return (
     <section
-      className={`pb-[13rem] mt-[3rem] flex flex-col gap-20 sm:flex-row justify-between items-center`}
+      className={`pb-[13rem] mt-[4rem] flex flex-col gap-20 sm:flex-row justify-between items-center`}
     >
       <div className=" flex flex-col">
         <h1 className="text-[2rem] xs:text-[3rem] md:text-[4rem] font-bold sm:leading-relaxed md:leading-[6rem] mb-4">
@@ -27,7 +27,7 @@ export default function Hero() {
           Book an Appointment
         </Button>
       </div>
-      <div className="w-full max-w-[35rem] h-full overflow-hidden relative grid grid-cols-2 grid-rows-2 gap-3 md:gap-5">
+      <div className="w-full max-w-[38rem] h-full overflow-hidden relative grid grid-cols-2 grid-rows-2 gap-4 md:gap-7">
         {/* <Image src= {heroImgLinks.name} className="w-full h-ful object-cover" alt="jh" /> */}
 
         {/* <Image src={Nwanboje}  className="w-full h-ful object-cover" alt="jh"></Image> */}
