@@ -6,14 +6,16 @@ import HeroMap from './heroMap';
 
 export default function Hero() {
   return (
-    <section className={`pb-[13rem] flex flex-col  sm:flex-row `}>
-      <div className=" flex flex-col mt-[8rem]">
+    <section
+      className={`pb-[13rem] mt-[3rem] flex flex-col gap-20 sm:flex-row justify-between items-center`}
+    >
+      <div className=" flex flex-col">
         <h1 className="text-[4rem] font-bold leading-[6rem] mb-4">
           We Make Your <br />
           <span className="text-[#07C589]">Smile</span> Our Priority.
         </h1>
 
-        <p className="text-[1rem] mb-[2rem]">
+        <p className="text-base md:text-xl mb-[2rem]">
           At DentClack, we are dedicated to one thing - your smile. With <br />
           over 10 years of professional experience and more than 100 <br />
           carefully selected dental practices, we are uniquely equipped to{' '}
@@ -25,7 +27,7 @@ export default function Hero() {
           Book an Appointment
         </Button>
       </div>
-      <div className="sm:ml-[4.5rem] w-full max-w-[28rem] h-full top-[6rem] sm:mt-[0] overflow-hidden relative grid grid-cols-2 grid-rows-2 gap-4">
+      <div className="w-full max-w-[33rem] h-full overflow-hidden relative grid grid-cols-2 grid-rows-2 gap-3 md:gap-5">
         {/* <Image src= {heroImgLinks.name} className="w-full h-ful object-cover" alt="jh" /> */}
 
         {/* <Image src={Nwanboje}  className="w-full h-ful object-cover" alt="jh"></Image> */}

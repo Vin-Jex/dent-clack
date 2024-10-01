@@ -43,7 +43,7 @@ export default function HeroMap() {
     <>
       {heroImgLinks.map((link, index) => {
         return (
-          <div key={link.id} className="aspect-square">
+          <div key={link.id} className="aspect-square h-full w-full">
             <Image
               src={link.name}
               className={`w-full h-full object-cover rounded-lg ${link.roundedClass}`}
