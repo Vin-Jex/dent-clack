@@ -3,10 +3,15 @@
 import { useEffect, useState } from "react";
 import { LightMode, DarkModeOutlined } from "@mui/icons-material";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 export default function ThemeToggle() {
   const [darkMode, setDarkMode] = useState(true);
+  const router = useRouter();
 
+  const handleSignUpClick = () => {
+    router.push('/signUp')
+  }
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") setDarkMode(true);
@@ -24,8 +29,8 @@ export default function ThemeToggle() {
 
   return (
     <div className='flex  items-center w-full max-w-[200px]'>
-      <Button width='specs' size='md'>
-        Login
+      <Button width='specs' size='md' onClick={handleSignUpClick}>
+        SignUp
       </Button>
 
       <div

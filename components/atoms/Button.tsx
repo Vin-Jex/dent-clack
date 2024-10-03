@@ -20,7 +20,9 @@ import React, {
     color = "blue",
     width = "auto",
     // height = "specs",
+    className="",
     ...props
+    
   }) => {
     const [isClient, setIsClient] = useState(false);
   
@@ -59,7 +61,7 @@ import React, {
   
     return (
       <button
-        className={`flex items-center justify-center space-x-1  font-poppins  ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.2rem] h-[2.2rem] text-base `}
+        className={`flex items-center justify-center space-x-1  font-poppins  ${widthClassName} text-center ${sizeClassName} ${colorClassName} whitespace-nowrap text-[#000] bg-[#07C589] cursor-pointer rounded-[0.2rem] h-[2.2rem] text-base ${className}`}
         {...props}
       >
         {children}
