@@ -11,15 +11,15 @@ const page = (props: Props) => {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#14532d] dark:text-white flex md:items-center justify-center">
-      <div className="flex flex-col md:flex-row bg-white dark:bg-[#14532d]/75  dark:text-white  md:w-3/4 lg:w-2/3 border-none ">
+    <div className="min-h-screen bg-white dark:bg-[#212423] dark:text-white flex md:items-center justify-center">
+      <div className="flex flex-col md:flex-row bg-white dark:bg-[#212423]/75  dark:text-white  w-full h-[100vh] border-none ">
         <div className="hidden md:block md:w-1/2 bg-[url('/images/Dentist5.jpg')] bg-cover bg-center relative ">
           <div className="absolute inset-0 bg-black  opacity-40 "></div>
           <div className="relative z-10 p-10 text-white flex flex-col justify-end items-center h-full ">
             <h2 className="text-xl font-bold mb-3">
               We Make Your Smile Our Priority.
             </h2>
-            <p className="mb-3 md:mx-10 xl:mx-14 text-center md:text-[0.7rem] xl:text-[0.8rem] text-white/75">
+            <p className="mb-3 md:mx-24  text-center md:text-[0.7rem] xl:text-[0.8rem] text-white/75">
               At DentClack, your smile is our priority. With over 10 years of
               expertise and top-tier dental practices, we deliver personalized
               treatments to restore your perfect smile.
@@ -35,12 +35,12 @@ const page = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 bg-white dark:bg-[#14532d] dark:text-white  p-8 md:px-6 md:pt-3 md:pb-6  lg:px-6 lg:pt-3 lg:pb-6  flex flex-col justify-center ">
-          <div className="md:pb-4 xl:pb-6 font-bold text-[1.5rem]">
+        <div className="w-full md:w-1/2 bg-white dark:bg-[#212423] dark:text-white h-[100vh] flex flex-col px-6 py-3">
+          <div className=" font-bold text-[1.5rem]">
             <p onClick={() => router.push('/')}>Dent<span className="text-[#07C589]">Clack</span></p>
           </div>
-          <div className="px-4 py-8 md:px-12 md:py-6 xl:px-24 xl:py-8">
-            <h1 className="text-2xl md:text-xl text-center font-bold mb-2 ">
+          <div className="px-6 py-12 sm:px-28 sm:py-20  xl:px-36 xl:py-20">
+            <h1 className="text-2xl  text-center font-bold mb-2 ">
               Create your Account
             </h1>
             <p className="text-gray-600 dark:text-white/75 mb-4 text-center text-sm">
@@ -48,43 +48,43 @@ const page = (props: Props) => {
             </p>
 
             <form className="space-y-4">
-              <div className="flex space-x-4">
+              <div className="grid lg:grid-cols-2 gap-4 ">
                 <Input
                   type="text"
                   placeholder="First Name"
-                  className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2  dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                  className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2  dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589] dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
                 />
                 <Input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                  className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589]  dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
                 />
               </div>
               <Input
                 type="number"
                 placeholder="Age"
-                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589]  dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
               />
               <Input
                 type="email"
                 placeholder="Email"
-                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589]  dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
               />
               <Input
                 type="text"
                 placeholder="Allergies"
-                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589]  dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
               />
               <Input
                 type="text"
                 placeholder="Country"
-                className="w-full rounded-md text-sm placeholder:text-sm px-3 py-1 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                className="w-full rounded-md text-sm placeholder:text-sm px-3 py-1 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589] dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
               />
               <Input
                 type="password"
                 placeholder="Password"
                 showPword={true}
-                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#14532d] dark:text-white focus:ring-1 ring-[#07c589]"
+                className="w-full rounded-md text-sm placeholder:text-sm md:px-3 px-4 md:py-1 py-2 dark:bg-[#212423] dark:text-white focus:ring-1 ring-[#07c589] dark:ring-white/75 dark:ring-1 dark:focus:ring-[#07c589]"
               />
 
               <Button
