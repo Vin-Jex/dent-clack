@@ -23,27 +23,19 @@ export default function ThemeToggle() {
   }, [darkMode]);
 
   return (
-    <div className='flex  items-center w-full max-w-[200px]'>
-      <Button width='specs' size='md'>
-        Login
-      </Button>
+    <div
+      className='flex bg-[#fdfdfd] border border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.5rem] h-[1.7rem] ml-[1.2rem] rounded-[1.5rem] overflow-hidden relative dark:bg-green-900 p-[0.1rem] transition-all duration-500 ease-in-out'
+      onClick={() => setDarkMode(!darkMode)}
+    >
+      <LightMode className='!text-base ml-[0.2rem] place-self-center z-10 text-[#FFFFFF] dark:text-[#FFFFFF66]/40 ' />
 
       <div
-        className='flex bg-[#fdfdfd] border border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.6rem] h-[1.7rem] ml-[1.2rem] rounded-[1.5rem]   dark:bg-green-900'
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        <LightMode className='!text-base ml-[5.5px] place-self-center z-10 text-[#FFFFFF] dark:text-[#FFFFFF66]/40 ' />
+        className={`flex bg-[#07C589] h-[1.4rem] w-full max-w-[1.4rem] rounded-full place-self-center transform ${
+          darkMode ? "right-0.5" : "mr-[5.2rem]"
+        } absolute `}
+      ></div>
 
-        <div
-          className={`flex bg-[#07C589] h-[1.8rem] w-full max-w-[1.8rem] rounded-full place-self-center transform z-0 transition-transform duration-300 ${
-            darkMode ? "ml-[1.7rem]" : "mr-[5.2rem]"
-          } absolute `}
-        >
-          {/* sx={{color:"#fdfdfd",width:"65%"}} */}
-        </div>
-
-        <DarkModeOutlined className='!text-base mr-[2.2px] place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] ml-[12px] ' />
-      </div>
+      <DarkModeOutlined className='!text-base mr-[1rem] place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] ml-[0.7rem] ' />
     </div>
   );
 }
