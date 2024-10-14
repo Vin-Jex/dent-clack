@@ -1,13 +1,10 @@
 import Button from '../atoms/Button';
 import HeroMap from './heroMap';
 
-// import Daniel from "c/daniel.jpg"
-// import { heroImgLinks } from '@/constants/index'
-
 export default function Hero() {
   return (
     <section
-      className={`pb-[13rem] mt-[4rem] flex flex-col gap-20 sm:flex-row justify-between items-center`}
+      className={`py-12 flex flex-col gap-20 sm:flex-row justify-between w-fit items-center`}
     >
       <div className=" flex flex-col">
         <h1 className="text-[2rem] xs:text-[3rem] md:text-[4rem] font-bold sm:leading-relaxed md:leading-[6rem] mb-4">
@@ -23,7 +20,7 @@ export default function Hero() {
           provide personalized treatment and restore your desired smile.
         </p>
 
-        <Button width="auto" size="height">
+        <Button width="auto" size='md'>
           Book an Appointment
         </Button>
       </div>
