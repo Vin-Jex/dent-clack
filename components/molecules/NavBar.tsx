@@ -9,7 +9,7 @@ import Button from "@/components/atoms/Button";
 import Link from "next/link";
 import { Close } from "@mui/icons-material";
 
-export default function navBar() {
+export default function Navbar() {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <nav className="flex flex-row justify-between items-center py-2 h-full overflow-hidden text-[#000000] dark:text-[#FFFF] ss:space-x-2 border">
@@ -55,9 +55,9 @@ export default function navBar() {
           className="flex flex-col space-y-[0.2rem] ss:hidden"
           onClick={() => setOpen(true)}
         >
-          <div className="rounded-sm w-6 h-1 bg-[#FFFFFF] bg:"></div>
-          <div className="rounded-sm w-6 h-1 bg-[#FFFFFF] "></div>
-          <div className="rounded-sm w-6 h-1 bg-[#FFFFFF] "></div>
+          <div className="rounded-sm w-6 h-1 dark:bg-[#FFFFFF] bg-stone-900"></div>
+          <div className="rounded-sm w-6 h-1 dark:bg-[#FFFFFF] bg-stone-900"></div>
+          <div className="rounded-sm w-6 h-1 dark:bg-[#FFFFFF] bg-stone-900 "></div>
         </div>
 
         <div
