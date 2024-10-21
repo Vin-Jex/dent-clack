@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply scroll-smooth;
+@layer base {
+  html {
+    @apply scroll-smooth font-poppins;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full 3xl:!max-w-[2500px] 2xl:!max-w-full xl:!max-w-full lg:!max-w-full md:!max-w-full sm:!max-w-full;
+  }
 }

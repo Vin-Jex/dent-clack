@@ -43,15 +43,15 @@ export default function RootLayout({
       </head>
       <body>
         <div
-          className={`w-full h-screen relative overflow-hidden bg-red-400 px-0 ${poppins.variable}`}
+          className={`w-full h-screen relative container mx-auto overflow-hidden bg-red-400 px-0 ${poppins.variable}`}
         >
           <div
-            className={`w-full xl:max-w-screen-xl h-[52px] fixed top-0 left-0 z-30 bg-primaryLight dark:bg-primaryDark px-2 md:px-12 border`}
+            className={`w-full container mx-auto h-[52px] fixed top-0 z-30 bg-primaryLight dark:bg-primaryDark px-2 md:px-12 border`}
           >
             <NavBar />
           </div>
 
-          <main className='mt-[52px] h-[calc(100vh-52px)] overflow-y-auto'>
+          <main className='mt-[52px] h-[calc(100vh-52px)] overflow-y-auto w-full'>
             {children}
           </main>
         </div>
