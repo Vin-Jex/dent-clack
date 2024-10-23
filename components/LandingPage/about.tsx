@@ -39,7 +39,7 @@ const aboutLink: AboutLink[] = [
 
 export default function About() {
   return (
-    <section className='flex flex-col lg:flex-row py-[8rem] justify-between gap-0 w-fit h-full space-x-0 border font-poppins place-content-center'>
+    <section className='flex flex-col lg:flex-row py-[8rem] justify-between gap-0  h-full border font-poppins place-content-center'>
       <div className='border border-pink-500 place-content-center w-full items-center justify-center lg:order-1 order-2'>
         <div className='relative flex w-fit mb-[4rem] border border-green-500'>
           <div className='aspect-square w-full h-full sm:w-[28rem] sm:h-[28rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>

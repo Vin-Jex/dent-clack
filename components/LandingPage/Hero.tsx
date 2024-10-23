@@ -4,7 +4,7 @@ import HeroMap from './heroMap';
 export default function Hero() {
   return (
     <section
-      className={`py-12 flex flex-col gap-20 sm:flex-row justify-between w-fit items-center`}
+      className={`py-12 flex flex-col gap-20 sm:flex-row justify-between items-center border w-full`}
     >
       <div className=" flex flex-col">
         <h1 className="text-[2rem] xs:text-[3rem] md:text-[4rem] font-bold sm:leading-relaxed md:leading-[6rem] mb-4">

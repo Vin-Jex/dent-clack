@@ -10,14 +10,14 @@ export default function Home() {
     <main className='font-poppins flex-col text-[#1E1E1E] h-full '>
       <div>
         <div
-          className='w-full xl:max-w-screen-xl bg-primaryLight dark:text-[#FFFFFF] px-0 dark:bg-primaryDark'
+          className='bg-primaryLight dark:text-[#FFFFFF] px-12 dark:bg-primaryDark'
           id='home'
         >
           <Hero />
         </div>
 
         <div
-          className={`bg-[#FFFFFF] dark:bg-primaryDark w-full xl:max-w-screen-xl`}
+          className={`bg-[#FFFFFF] dark:bg-primaryDark px-12`}
           id='about'
         >
           <About />
