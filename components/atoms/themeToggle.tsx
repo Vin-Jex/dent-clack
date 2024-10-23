@@ -23,7 +23,7 @@ export default function ThemeToggle() {
 
   return (
     <div
-      className='flex bg-[#fdfdfd] border gap-2 border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.5rem] h-[1.7rem] ml-[1.2rem] rounded-[1.5rem] overflow-hidden relative dark:bg-green-900 p-[0.1rem] transition-all duration-500 ease-in-out'
+      className='flex bg-[#fdfdfd] border gap-2 border-[#dcd5d5] dark:border-[#FFFFFF33]/30 w-full max-w-[3.5rem] h-[1.7rem] ml-[1.2rem] rounded-[1.5rem] overflow-hidden relative dark:bg-green-900 p-[0.1rem] transition-all duration-500 ease-in-out z-50'
       onClick={() => setDarkMode(!darkMode)}
     >
       <LightMode className='!text-base ml-[0.2rem] place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF66]/40 ' />
@@ -34,7 +34,7 @@ export default function ThemeToggle() {
         } absolute `}
       ></div>
 
-      <DarkModeOutlined className='!text-base place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] mr-5 md:mr-1' />
+      <DarkModeOutlined className='!text-base place-self-center z-10 text-[#1E1E1E99] dark:text-[#FFFFFF] mr-1' />
     </div>
   );
 }

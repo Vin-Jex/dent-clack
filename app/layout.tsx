@@ -43,10 +43,10 @@ export default function RootLayout({
       </head>
       <body>
         <div
-          className={`w-full h-screen relative container mx-auto overflow-hidden ${poppins.variable}`}
+          className={`w-full h-screen relative container mx-auto overflow-hidden ${poppins.variable} relative`}
         >
           <div
-            className={`w-full container mx-auto h-[52px] fixed top-0 z-30 bg-primaryLight dark:bg-primaryDark px-2 md:px-12`}
+            className={`w-full container mx-auto h-[52px] fixed top-0 z-0 bg-primaryLight dark:bg-primaryDark px-2 md:px-12`}
 
           >
             <NavBar />

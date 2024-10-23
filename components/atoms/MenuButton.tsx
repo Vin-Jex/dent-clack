@@ -1,12 +1,13 @@
 "use client";
-import Menu from "@mui/icons-material";
+import {Menu} from "@mui/icons-material";
 import { useState } from "react";
 import { navLinks } from "@/constants";
 import Link from "next/link";
-import CloseIcon from "@mui/icons-material/Close";
+import {Close} from "@mui/icons-material/";
 import Image from "next/image";
 import dentLogoLite from "@/public/images/dentLogoLite.png";
 import dentLogoDark from "@/public/images/dentLogoDark.png";
+import ThemeToggle from "../atoms/themeToggle";
 
 export default function MenuButton() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,23 +23,24 @@ export default function MenuButton() {
   };
 
   return (
-    <div className="border">
+    <div className={`flex flex-row justify-between items-center w-full`}>
+      
       <div
-        className="flex flex-col space-y-[0.2rem] ss:hidden"
+        className="flex flex-col ss:hidden"
         onClick={() => handleMenuClick()}
       >
-        <Menu className={`${!isMenuOpen ? "flex text-[#22302B] dark:text-[#FFFFFF] z-50" : "hidden"} `} />
+        <Menu className={`${!isMenuOpen ? "flex text-[#22302B] dark:text-[#FFFFFF] z-50" : "hidden"}`}/>
+        <Close className={`${isMenuOpen ? "flex text-[#22302B] dark:text-[#22302B] z-50" : "hidden"}`}/>
 
       </div>
 
       <div className={`flex ss:flex ss:border ss:w-full`}>
-        {/*  */}
 
         <ul
-          className={`ss:w-full ss:flex-row  ss:flex ss:items-center ss:justify-end lg:space-x-10 ss:space-x-2 sm:space-x-4 sm:mr-1 lg:mr-[2rem] ${isMenuOpen ? " border flex-col absolute top-0 right-50 left-0 bg-[#FFFFFF] space-y-4 transition-transform duration-500 translate-x-10 w-[100vw] h-[100vh] p-4" : "hidden right-full"}`}
+          className={`ss:w-full ss:flex-row  ss:flex ss:items-center ss:justify-end lg:space-x-10 ss:space-x-2 sm:space-x-4 sm:mr-1 lg:mr-[2rem] ${isMenuOpen ? "flex-col absolute top-0 bg-[#FFFFFF] transform -translate-x-full space-y-6 w-[50vw] h-[100vh] px-2 -z-50 transition-all duration-1000 ease-in-out" : "hidden right-full"}`}
         >
           <div
-            className={`${isMenuOpen ? "flex flex-row h-fit overflow-hidden left-0 top-0 z-10 space-x-72 w-full items-center border" : "hidden"}`} 
+            className={`flex ss:hidden ${isMenuOpen ? "flex flex-row h-fit overflow-hidden z-50 w-full items-center mt-2.5 space-x-10" : "hidden"}`} 
           >
             <Image
               src={dentLogoLite}
@@ -50,9 +52,7 @@ export default function MenuButton() {
               className={`w-full h-full hidden dark:flex max-w-24`}
               alt="dentLogo"
             ></Image>
-            <CloseIcon
-              className={`${isMenuOpen ? "flex text-[#22302B] dark:text-[#FFFFFF] z-50" : "hidden"} `} onClick={() => handleMenuClick()}
-            ></CloseIcon>
+
           </div>
           
           {navLinks.map((nav, index) => (
@@ -63,6 +63,7 @@ export default function MenuButton() {
               <Link
                 href={`#${nav.title}`}
                 className="!capitalize text-sm font-poppins"
+                onClick={() => handleMenuClick()}
               >
                 {nav.title}
               </Link>
