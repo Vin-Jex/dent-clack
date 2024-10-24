@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   html {
     @apply scroll-smooth font-poppins;
@@ -10,6 +11,22 @@
 
 @layer components {
   .container {
-    @apply w-full 3xl:!max-w-[2500px] 2xl:!max-w-full xl:!max-w-full lg:!max-w-full md:!max-w-full sm:!max-w-full;
+    @apply min-w-full lg:min-w-[auto] 3xl:!max-w-[2500px] 2xl:!max-w-full xl:!max-w-full lg:!max-w-full;
+  }
+}
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }

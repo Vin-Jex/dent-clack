@@ -39,10 +39,10 @@ const aboutLink: AboutLink[] = [
 
 export default function About() {
   return (
-    <section className='flex flex-col lg:flex-row py-[8rem] justify-between gap-0 w-fit h-full space-x-0 border font-poppins place-content-center'>
-      <div className='border border-pink-500 place-content-center w-full items-center justify-center lg:order-1 order-2'>
-        <div className='relative flex w-fit mb-[4rem] border border-green-500'>
-          <div className='aspect-square w-full h-full sm:w-[28rem] sm:h-[28rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
+    <section className='flex flex-col lg:flex-row py-[8rem] justify-between gap-0  h-full font-poppins place-content-center'>
+      <div className='ss:p-16 md:p-28 lg:p-0 w-full mt-8 lg:mt-0 lg:order-1 order-2'>
+        <div className='relative flex w-fit mb-[4rem]'>
+          <div className='aspect-square w-full -z-50 h-full sm:w-[28rem] sm:h-[28rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
             <Image
               src={Dentist}
               className={`w-full h-full  object-cover`}
@@ -54,17 +54,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className='flex flex-col w-full order-1 border border-yellow-600'>
-        <span className='text-[#07C589] font-bold border'>About</span>
-        <h3 className='text-2xl font-semibold dark:text-[#FFFFFF] border'>
+      <div className='flex flex-col w-full order-1'>
+        <span className='text-[#07C589] w-full text-center lg:text-left font-bold'>About</span>
+        <h3 className='text-2xl font-semibold text-center lg:text-left dark:text-[#FFFFFF]'>
           About Tooth Diseases And Decay
         </h3>
-        <p className='text-[#1E1E1E8C] w-full text-sm dark:text-[#FFFFFFCC] border'>
+        <p className='text-[#1E1E1E8C] w-full text-sm text-center lg:text-left dark:text-[#FFFFFFCC] '>
           &quot;Oral disease&quot; refers to common dental issues like cavities,
           gum disease, infections, injuries, and oral cancers. Most of these
           conditions are preventable and treatable in early stages.
         </p>
-        <div className='grid grid-cols-2 items-center gap-4 border'>
+        <div className='grid grid-cols-2 place-content-center gap-4'>
           {aboutLink.map((link, index) => {
             return (
               <div
