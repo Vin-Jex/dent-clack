@@ -1,23 +1,26 @@
-import NavBar from "@/components/molecules/NavBar";
 import Hero from "@/components/LandingPage/Hero";
+import About from "@/components/LandingPage/about";
+
+const styles = {
+  paddingX: "px-8 sm:px-[4rem]",
+};
 
 export default function Home() {
-  const styles = {
-    paddingX: "px-8 sm:px-[4rem]",
-    paddingY: "py-32 ",
-  };
-
   return (
-    <main className='overflow-hidden font-poppins  flex-col text-[#1E1E1E]'>
-      <div className=' bg-[#07C589] bg-opacity-5 dark:text-[#FFFFFF] dark:bg-green-900'>
+    <main className='font-poppins flex-col text-[#1E1E1E] h-full'>
+      <div>
         <div
-          className={`${styles.paddingX}   w-full border-b border-stone-300 `}
+          className='bg-primaryLight dark:text-[#FFFFFF] px-2 md:px-12 dark:bg-primaryDark'
+          id='home'
         >
-          <NavBar />
+          <Hero />
         </div>
 
-        <div className={`${styles.paddingX} `}>
-          <Hero />
+        <div
+          className={`bg-[#FFFFFF] dark:bg-primaryDark px-2 md:px-12`}
+          id='about'
+        >
+          <About />
         </div>
       </div>
     </main>

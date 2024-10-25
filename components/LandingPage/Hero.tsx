@@ -1,15 +1,12 @@
 import Button from '../atoms/Button';
 import HeroMap from './heroMap';
 
-// import Daniel from "c/daniel.jpg"
-// import { heroImgLinks } from '@/constants/index'
-
 export default function Hero() {
   return (
     <section
-      className={`pb-[13rem] mt-[4rem] flex flex-col gap-20 sm:flex-row justify-between items-center`}
+      className={`py-12 flex flex-col gap-20 lg:flex-row justify-between items-center w-full`}
     >
-      <div className=" flex flex-col">
+      <div className="flex flex-col w-full">
         <h1 className="text-[2rem] xs:text-[3rem] md:text-[4rem] font-bold sm:leading-relaxed md:leading-[6rem] mb-4">
           We Make Your <br />
           <span className="text-[#07C589]">Smile</span> Our Priority.
@@ -23,11 +20,11 @@ export default function Hero() {
           provide personalized treatment and restore your desired smile.
         </p>
 
-        <Button width="auto" size="height">
+        <Button width="auto" size='md'>
           Book an Appointment
         </Button>
       </div>
-      <div className="w-full max-w-[38rem] h-full overflow-hidden relative grid grid-cols-2 grid-rows-2 gap-4 md:gap-7">
+      <div className="w-full max-w-[38rem] h-full overflow-hidden relative  grid grid-cols-2 grid-rows-2 gap-4 md:gap-7">
         {/* <Image src= {heroImgLinks.name} className="w-full h-ful object-cover" alt="jh" /> */}
 
         {/* <Image src={Nwanboje}  className="w-full h-ful object-cover" alt="jh"></Image> */}
