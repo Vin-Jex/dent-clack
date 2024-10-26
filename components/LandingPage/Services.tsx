@@ -51,7 +51,7 @@ const aboutLink: AboutLink[] = [
 
 export default function Services() {
     return (
-      <section className='flex flex-col lg:flex-row py-[8rem] justify-between gap-32 h-full font-poppins place-content-center'>
+      <section className='flex flex-col lg:flex-row pb-[8rem] justify-between gap-32 h-full font-poppins place-content-center'>
       
         <div className='flex flex-col w-full'>
           <span className='text-[#07C589] w-full text-center lg:text-left font-bold'>Services we offer</span>
@@ -79,7 +79,7 @@ export default function Services() {
 
         <div className='ss:p-16 md:p-28 lg:p-0 w-full'>
           <div className='relative flex w-fit mb-[4rem]'>
-            <div className='aspect-square w-full -z-50 h-full sm:w-[28rem] sm:h-[28rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
+            <div className='aspect-square w-full -z-50 h-full sm:w-[26rem] sm:h-[26rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
               <Image
                 src={Dentist}
                 className={`w-full h-full  object-cover`}
@@ -87,7 +87,7 @@ export default function Services() {
               ></Image>
             </div>
 
-            <div className='absolute w-full h-full sm:w-[28rem] sm:h-[28rem] mt-[1.5rem] rounded-br-[10rem] rounded-[1rem]  bg-[#07C589] left-6'></div>
+            <div className='absolute w-full h-full sm:w-[26rem] sm:h-[26rem] mt-[1.5rem] rounded-br-[10rem] rounded-[1rem]  bg-[#07C589] left-6'></div>
           </div>
         </div>
         

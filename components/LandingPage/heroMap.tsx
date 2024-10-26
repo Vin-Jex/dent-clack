@@ -44,10 +44,10 @@ export default function HeroMap() {
     <>
       {heroImgLinks.map((link, index) => {
         return (
-          <div key={link.id} className='aspect-square h-full w-full'>
+          <div key={link.id} className='aspect-square h-full w-full z-10'>
             <Image
               src={link.name}
-              className={`w-full h-full object-cover rounded-lg -z-[100] ${link.roundedClass}`}
+              className={`w-full h-full object-cover rounded-lg ${link.roundedClass}`}
               alt='Picture of the author'
             ></Image>
           </div>

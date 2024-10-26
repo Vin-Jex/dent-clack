@@ -32,7 +32,7 @@ export default function MenuButton() {
       </div>
 
       <ul
-        className={`flex flex-col ss:px-0 absolute ss:flex ss:flex-row ss:relative ss:w-full ss:w-fit ss:bg-transparent ss:items-center ss:justify-end lg:space-x-10 ss:space-x-2 sm:space-x-4 ss:space-y-0 sm:mr-1 lg:mr-[2rem] ss:translate-x-0 ${isMenuOpen ? "px-4 z-50 bg-white top-0 left-0 w-[50vw] h-[100vh] space-y-6 bg-[#FFFFFF] dark:text-[#22302B] translate-x-0 transform duration-1000 ease-in-out transition-all" : "hidden"}`}
+        className={`flex flex-col ss:px-0 absolute ss:flex ss:flex-row ss:relative ss:w-full ss:w-fit ss:bg-transparent ss:items-center ss:justify-end lg:space-x-10 ss:space-x-2 sm:space-x-4 ss:space-y-0 sm:mr-1 lg:mr-[2rem] ss:translate-x-0 ${isMenuOpen ? "px-4 z-[100] bg-white top-0 left-0 w-[50vw] h-[100vh] space-y-6 bg-[#FFFFFF] dark:text-[#22302B] translate-x-0 transform duration-1000 ease-in-out transition-all" : "hidden"}`}
       >
         {/* ${isMenuOpen ?-translate-x-full  ss:relative   " : "hidden ss:flex-row md:relative "} */}
         <div
