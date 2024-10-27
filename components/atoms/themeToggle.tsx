@@ -30,7 +30,7 @@ export default function ThemeToggle() {
 
       <div
         className={`flex bg-[#07C589] h-[1.4rem] w-full max-w-[1.4rem] rounded-full place-self-center transform ${
-          darkMode ? "right-0.5" : "mr-[5.2rem]"
+           !darkMode ? "right-0.5" : "left-0.5" 
         } absolute `}
       ></div>
 
