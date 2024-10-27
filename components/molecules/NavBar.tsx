@@ -9,7 +9,9 @@ import MenuButton from "@/components/atoms/MenuButton";
 
 export default function navBar() {
   return (
-    <nav className="flex flex-row justify-between items-center py-2 h-full overflow-hidden text-[#000000] dark:text-[#FFFF] ss:space-x-2">
+
+    <nav className="flex flex-row justify-between items-center py-2 h-full overflow-hidden text-[#000000] dark:text-[#FFFF] ss:space-x-2 z-20">
+
       <div className="flex max-w-32 h-fit overflow-hidden left-0 top-0">
         <Image
           src={dentLogoLite}
@@ -24,12 +26,9 @@ export default function navBar() {
       </div>
 
       <div className="flex items-center justify-between">
-        
-        <div className="hidden ss:flex">
-          
-        <MenuButton></MenuButton>
-          
-        </div>
+
+        <MenuButton />
+
 
         <div className="hidden ss:flex items-center  ml-20  w-full space-x-4">
           <Button width="fit" size="sm">
@@ -40,12 +39,7 @@ export default function navBar() {
           
         </div>
 
-          <div className="flex ss:hidden">
-            
-          <MenuButton></MenuButton>
-            
-          </div>
-       
+
       </div>
 
       
