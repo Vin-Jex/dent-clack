@@ -17,9 +17,9 @@ type HeroImgLinks = {
 export const navLinks: NavLinks[] = [
   { id: 1, title: "home" },
   { id: 2, title: "about" },
-  { id: 3, title: "services" },
-  { id: 4, title: "specialist" },
-  { id: 4, title: "testimonials" },
+  { id: 3, title: "Services" },
+  { id: 4, title: "Specialist" },
+  { id: 4, title: "Testimonials" },
 ];
 
 export const heroImgLinks: HeroImgLinks[] = [

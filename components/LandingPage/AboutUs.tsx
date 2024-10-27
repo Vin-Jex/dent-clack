@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className="justify-between space-y-8 justify-items-center text-center pb-16">
+    <section className="pb-24 justify-between space-y-8 justify-items-center text-center">
       
       <div className="space-y-1 justify-items-center w-full">
          <p className="text-[#07C589]
