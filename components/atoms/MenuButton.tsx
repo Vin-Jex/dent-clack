@@ -1,4 +1,5 @@
 "use client";
+
 import { Menu } from "@mui/icons-material";
 import { useState } from "react";
 import { navLinks } from "@/constants";
@@ -24,6 +25,7 @@ export default function MenuButton() {
 
   return (
     <div className={`flex flex-row justify-between items-center w-full`}>
+
       <div
         className="flex flex-col ss:hidden text-[#22302B] dark:text-[#FFFFFF] z-[100]"
         onClick={() => handleMenuClick()}
@@ -74,6 +76,7 @@ export default function MenuButton() {
           </li>
         ))}
       </ul>
+
     </div>
   );
 }
