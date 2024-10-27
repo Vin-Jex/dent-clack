@@ -21,20 +21,20 @@ export default function Home() {
         </div>
 
         <div
-          className={`bg-[#FFFFFF] dark:bg-[#06170e] px-2 md:px-12`}
+          className={`bg-[#FFFFFF] dark:bg-[#1c2622] px-2 md:px-12`}
           id='about'
         >
           <About />
         </div>
         
         <div
-          className={`bg-[#FFFFFF] dark:bg-[#06170e] px-2 md:px-12`}
+          className={`bg-[#FFFFFF] dark:bg-[#1c2622] px-2 md:px-12`}
           id='about'
         >
           <AboutUs />
         </div>
         <div
-          className={`bg-[#FFFFFF] dark:bg-[#06170e] px-2 md:px-12`}
+          className={`bg-[#FFFFFF] dark:bg-[#1c2622] px-2 md:px-12`}
           id='Services'
         >
           <Services />
@@ -46,7 +46,7 @@ export default function Home() {
           <Specialist />
         </div>
         <div
-          className={`bg-[#FFFFFF] dark:bg-[#06170e] px-2 md:px-12`}
+          className={`bg-[#FFFFFF] dark:bg-[#1c2622] px-2 md:px-12`}
           id='Testimonials'
         >
           <Testimonials />

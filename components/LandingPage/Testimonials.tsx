@@ -56,18 +56,18 @@ export default function Testimonials() {
         <div className="space-y-4 ss:space-y-0 ss:grid ss:grid-cols-2 place-content-center ss:gap-16">
           {testimonialImgLinks.map((link, index) => {
             return (
-              <div key={link.id} className="flex flex-row w-[26rem] border">
+              <div key={link.id} className="flex flex-row w-[26rem] border pr-3">
                    <div
                     className="aspect-square h-[10rem] w-[20rem] relative"
                   >
                     <Image
                       src={link.name}
-                      className={`w-[10rem] h-[10rem] object-cover rounded-br-3xl -z-[100] bg-cover`}
+                      className={`w-[10rem] h-[10rem] object-top rounded-br-3xl -z-[100] bg-cover mr-3`}
                       alt="Picture of the author"
                     >
                     </Image>
                   </div>
-                  <div className="flex flex-col mt-12 text-sm font-semibold">{link.staffName} <span className="text-xs font-light mt-1">{link.content}</span></div>
+                  <div className="flex flex-col mt-12 text-sm font-semibold dark:text-white">{link.staffName} <span className="text-xs font-light mt-1 dark:text-[#FFFFFFCC]">{link.content}</span></div>
               </div>
              
             );
