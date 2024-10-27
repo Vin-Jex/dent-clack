@@ -24,21 +24,14 @@ export default function navBar() {
       </div>
 
       <div className="flex items-center justify-between">
-
         <MenuButton />
-        
         <div className="hidden ss:flex items-center  ml-20  w-full space-x-4">
           <Button width="fit" size="sm">
             Login
           </Button>
-
           <ThemeToggle />
-          
         </div>
-
       </div>
-
-      
     </nav>
   );
 }

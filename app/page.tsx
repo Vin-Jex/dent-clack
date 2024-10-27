@@ -51,7 +51,6 @@ export default function Home() {
         >
           <Testimonials />
         </div>
-
       </div>
     </main>
   );

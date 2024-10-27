@@ -86,11 +86,9 @@ export default function Services() {
                 alt='Picture of the author'
               ></Image>
             </div>
-
             <div className='absolute w-full h-full sm:w-[26rem] sm:h-[26rem] mt-[1.5rem] rounded-br-[10rem] rounded-[1rem]  bg-[#07C589] left-6'></div>
           </div>
         </div>
-        
       </section>
     )
 }
