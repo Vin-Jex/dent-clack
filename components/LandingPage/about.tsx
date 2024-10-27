@@ -39,10 +39,12 @@ const aboutLink: AboutLink[] = [
 
 export default function About() {
   return (
+
     <section className='flex flex-col lg:flex-row py-[4rem] justify-between gap-0  h-full font-poppins place-content-center'>
       <div className='ss:p-16 md:p-28 lg:p-0 w-full mt-8 lg:mt-0 lg:order-1 order-2 z-10'>
         <div className='relative flex w-fit mb-[4rem]'>
           <div className='aspect-square w-full h-full sm:w-[26rem] sm:h-[26rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
+
             <Image
               src={Dentist}
               className={`w-full h-full  object-cover`}
