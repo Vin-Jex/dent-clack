@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import NavBar from "@/components/molecules/NavBar";
+import "../globals.css";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
+
 export const metadata: Metadata = {
   title: "Dent Clack",
   description:
@@ -44,7 +46,17 @@ export default function RootLayout({
         <div
           className={`w-full h-screen relative container mx-auto overflow-hidden ${poppins.variable} relative`}
         >
-          <main>{children}</main>
+          <div
+            className={`w-full container mx-auto h-[52px] fixed top-0 z-0 bg-primaryLight dark:bg-primaryDark px-2 md:px-12 border-b-2`}
+
+          >
+            <NavBar />
+          </div>
+
+          <main className='mt-[52px] h-[calc(100vh-52px)] overflow-y-auto w-full'>
+
+            {children}
+          </main>
         </div>
       </body>
     </html>
