@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   html {
     @apply scroll-smooth font-poppins;
@@ -13,10 +12,17 @@
   .container {
     @apply min-w-full lg:min-w-[auto] 3xl:!max-w-[2500px] 2xl:!max-w-full xl:!max-w-full lg:!max-w-full;
   }
+
+  .input {
+    @apply w-full px-2.5 sm:px-3 py-3 rounded-md !outline-none bg-transparent !border-[#1E1E1E40] text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder:text-dark/50 first-letter:!uppercase text-dark/50 transition duration-200;
+  }
+
+  .radio-check {
+    @apply h-6 w-6 appearance-none ring-[2.4px] ring-inset ring-white border-[3.5px] border-primary rounded-full checked:bg-primary checked:border-primary;
+  }
 }
 
 @layer utilities {
-
   /* Hide scrollbar for Chrome, Safari, and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;

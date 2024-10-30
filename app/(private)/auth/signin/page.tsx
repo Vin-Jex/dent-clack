@@ -1,9 +1,7 @@
-import React from "react";
+import SignIn from "@/components/Auth/SignIn";
 
-type Props = {};
-
-const page = (props: Props) => {
-  return <div>Sign In Page</div>;
+const page = () => {
+  return <SignIn />;
 };
 
 export default page;
