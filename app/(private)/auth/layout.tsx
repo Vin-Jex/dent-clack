@@ -11,7 +11,7 @@ const AuthLayout = ({
 }>) => {
   return (
     <div className='transition-all ease-in-out flex justify-between w-full h-screen'>
-      <aside className='flex items-center justify-center w-1/2 h-full'>
+      <aside className='hidden lg:flex items-center justify-center w-1/2 h-full'>
         <Image
           src={IMG}
           alt='Authentication Layout'
@@ -21,9 +21,9 @@ const AuthLayout = ({
           className='h-full w-full object-cover object-bottom'
         />
       </aside>
-      <div className='flex items-start w-1/2 h-full overflow-y-auto py-4 duration-300 relative'>
+      <div className='flex items-start w-full lg:w-1/2 h-full overflow-y-auto py-4 duration-300 relative'>
         <header className='absolute top-0 left-0 w-full px-6 py-6'>
-          <Link href='/' className='flex items-center'>
+          <Link href='/' className='flex items-center w-fit'>
             <Image
               src={LOGO}
               alt='LOGO'
@@ -34,7 +34,7 @@ const AuthLayout = ({
           </Link>
         </header>
 
-        <div className='mt-[100px] !h-[calc(100vh-100px)]'>{children}</div>
+        <div className='mt-[100px] !h-[calc(100vh-100px)] w-full'>{children}</div>
       </div>
     </div>
   );

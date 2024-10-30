@@ -25,7 +25,17 @@ export type InputType =
   | "submit"
   | "tel"
   | "time"
-  | "week";
+  | "week"
+  | "url"
+  | "range"
+  | "radiogroup"
+  | "checkboxgroup"
+  | "select"
+  | "datalist"
+  | "keygen"
+  | "label"
+  | "legend"
+  | "meter";
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   validationError?: string;
   isValid?: boolean | undefined;
@@ -75,19 +85,19 @@ const Input: React.FC<InputProps> = ({
           {...inputProps}
           style={{
             width: "100%",
-            border: `1.5px solid ${statusColor}`,
+            border: `1.1px solid ${statusColor}`,
             outline: "none",
             appearance: "none",
           }}
         />
         {showPword && showInput ? (
           <VisibilityOutlined
-            className='absolute right-5 top-1/2 -translate-y-1/2 !text-grey/60 !text-[1.4rem] !z-50 bg-transparent'
+            className='absolute right-2 top-1/2 -translate-y-1/2 !text-dark/60 !text-[1.2rem] !z-50 bg-transparent'
             onClick={showInputField}
           />
         ) : showPword && !showInput ? (
           <VisibilityOffOutlined
-            className='absolute right-5 top-1/2 -translate-y-1/2 !text-grey/60 !text-[1.4rem] !z-50 bg-transparent'
+            className='absolute right-2 top-1/2 -translate-y-1/2 !text-dark/60 !text-[1.2rem] !z-50 bg-transparent'
             onClick={showInputField}
           />
         ) : (
