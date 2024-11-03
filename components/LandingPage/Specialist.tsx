@@ -74,7 +74,7 @@ export default function Specialist() {
             >
               <Image
                 src={link.name}
-                className={`w-full h-full object-center rounded-l-lg rounded-tr-lg -z-[100] bg-cover`}
+                className={`w-full h-full object-cover rounded-l-lg rounded-tr-lg -z-[100] bg-cover`}
                 alt="Picture of the author"
               >
               </Image>

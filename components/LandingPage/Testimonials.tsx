@@ -58,11 +58,11 @@ export default function Testimonials() {
             return (
               <div key={link.id} className="flex flex-row w-[26rem] border pr-3">
                    <div
-                    className="aspect-square h-[10rem] w-[20rem] relative"
+                    className="aspect-auto h-[10rem] w-[20rem] relative"
                   >
                     <Image
                       src={link.name}
-                      className={`w-[10rem] h-[10rem] object-top rounded-br-3xl -z-[100] bg-cover mr-3`}
+                      className={`w-[10rem] h-[10rem] object-cover rounded-br-3xl -z-[100] bg-cover mr-3`}
                       alt="Picture of the author"
                     >
                     </Image>
