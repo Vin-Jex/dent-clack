@@ -84,7 +84,7 @@ export default function Footer() {
                 
             </div>
             </div>
-            <p className='w-full text-xs text-center space-x-6 mt-4'> <span> &copy;2022</span>  <Link href={`#`}>DentClark.com</Link> </p>
+            <p className='w-full text-xs text-center space-x-6 mt-10'> <span> &copy;2022</span>  <Link href={`#`}>DentClark.com</Link> </p>
         </section>
     )
 }

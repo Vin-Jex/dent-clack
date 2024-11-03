@@ -12,7 +12,7 @@ export default function AboutUs() {
         dark:text-[#FFFFFF]">Who we are</p>
       <p className="text-[#1E1E1E8C] 
         text-sm
-        dark:text-[#FFFFFFCC] w-[72%]">For your dental health, trust us to provide the best treatment. We&apos;ll guide you from your first consultation to lifelong maintenance. We believe a beautiful smile enhances your quality of life and aim to achieve the best results in a fun, relaxed environment.</p>
+        dark:text-[#FFFFFFCC] w-[72%] xl:w-50%">For your dental health, trust us to provide the best treatment. We&apos;ll guide you from your first consultation to lifelong maintenance. We believe a beautiful smile enhances your quality of life and aim to achieve the best results in a fun, relaxed environment.</p>
       </div>
      
       

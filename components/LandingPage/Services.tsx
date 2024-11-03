@@ -51,19 +51,19 @@ const aboutLink: AboutLink[] = [
 
 export default function Services() {
     return (
-      <section className='flex flex-col lg:flex-row pb-[8rem] justify-between gap-32 h-full font-poppins place-content-center'>
+      <section className='flex flex-col lg:flex-row pb-[8rem] h-full font-poppins relative  place-content-center w-full'>
       
-        <div className='flex flex-col w-full'>
+        <div className='flex flex-col w-[50%]'>
           <span className='text-[#07C589] w-full text-center lg:text-left font-bold'>Services we offer</span>
           <h3 className='text-2xl font-semibold text-center lg:text-left dark:text-[#FFFFFF] mb-4'>
             Conditions we treat
           </h3>
-          <div className='space-y-8 ss:space-y-0 ss:grid ss:grid-cols-2 place-content-center ss:gap-4'>
+          <div className='space-y-8 ss:space-y-0 ss:grid ss:grid-cols-2 place-content-center ss:gap-6'>
             {aboutLink.map((link, index) => {
               return (
                 <div
                   key={link.id}
-                  className='border w-full ss:max-w-[19rem] border-gray-400 text-sm rounded-md px-4 py-4'
+                  className='border w-full ss:min-w-[10rem] border-gray-400 text-sm rounded-md px-4 py-4'
                 >
                   <p className='text-[#07C589] text-base font-bold'>
                     {link.title}
@@ -77,7 +77,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className='ss:p-16 md:p-28 lg:p-0 w-full'>
+        <div className='ss:p-16 md:p-28 lg:p-0 w-[50%] place-items-end'>
           <div className='relative flex w-fit mb-[4rem]'>
             <div className='aspect-square w-full z-10 h-full sm:w-[26rem] sm:h-[26rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden'>
               <Image
