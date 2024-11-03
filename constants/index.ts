@@ -19,7 +19,7 @@ export const navLinks: NavLinks[] = [
   { id: 2, title: "about" },
   { id: 3, title: "Services" },
   { id: 4, title: "Specialist" },
-  { id: 4, title: "Testimonials" },
+  { id: 5, title: "Testimonials" },
 ];
 
 export const heroImgLinks: HeroImgLinks[] = [

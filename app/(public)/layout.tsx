@@ -14,7 +14,7 @@ export default function RootLayout({
       className={`w-full h-screen container mx-auto overflow-hidden relative`}
     >
       <div
-        className={`w-full container mx-auto h-[52px] fixed top-0 z-0 bg-primaryLight dark:bg-primaryDark px-2 md:px-12 border-b-2`}
+        className={`w-full container mx-auto h-[52px] fixed top-0 z-0 bg-primaryLight dark:bg-primaryDark px-2 md:px-12 border-b`}
       >
         <NavBar />
       </div>

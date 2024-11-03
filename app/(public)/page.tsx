@@ -4,6 +4,7 @@ import AboutUs from "@/components/LandingPage/AboutUs";
 import Services from "@/components/LandingPage/Services";
 import Specialist from "@/components/LandingPage/Specialist";
 import Testimonials from "@/components/LandingPage/Testimonials";
+import Footer from "@/components/molecules/Footer"
 
 export default function Home() {
   return (
@@ -46,6 +47,12 @@ export default function Home() {
           id="Testimonials"
         >
           <Testimonials />
+        </div>
+        <div
+          className="bg-primaryLight dark:text-[#FFFFFF] px-2 md:px-12 dark:bg-primaryDark"
+          id="Footer"
+        >
+          <Footer />
         </div>
       </div>
     </main>

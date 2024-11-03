@@ -16,7 +16,7 @@ export default function AboutUs() {
       </div>
      
       
-      <div className="w-full justify-items-center w-[20rem] ss:w-[26rem] md:w-[44rem] rounded-md overflow-hidden">
+      <div className="justify-items-center w-[20rem] ss:w-[26rem] md:w-[44rem] rounded-md overflow-hidden">
         <Image
           src={aboutPic}
           className={`w-full h-full object-cover`}

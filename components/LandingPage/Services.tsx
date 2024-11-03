@@ -63,7 +63,7 @@ export default function Services() {
               return (
                 <div
                   key={link.id}
-                  className='border w-fit w-full ss:max-w-[19rem] border-gray-400 text-sm rounded-md px-4 py-4'
+                  className='border w-full ss:max-w-[19rem] border-gray-400 text-sm rounded-md px-4 py-4'
                 >
                   <p className='text-[#07C589] text-base font-bold'>
                     {link.title}
@@ -79,7 +79,7 @@ export default function Services() {
 
         <div className='ss:p-16 md:p-28 lg:p-0 w-full'>
           <div className='relative flex w-fit mb-[4rem]'>
-            <div className='aspect-square w-full -z-50 h-full sm:w-[26rem] sm:h-[26rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden z-10'>
+            <div className='aspect-square w-full z-10 h-full sm:w-[26rem] sm:h-[26rem] rounded-br-[10rem] rounded-[1rem] overflow-hidden'>
               <Image
                 src={Dentist}
                 className={`w-full h-full  object-cover`}
